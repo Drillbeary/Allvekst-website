@@ -21,13 +21,13 @@ Nettbutikk ---
 
 Allvekt --- 
 
-Hjemme side med drone video
+Hjemme side med drone video, evt utdrag fra facebook posts. link til sosiale media. 
 
 Om allvekst -> vekst bedrift, dvs. informasjon om tiltakene (VTA, AFT, Kommunal, Lærekandidat)
 
 Om bedriftene i allvekst -> Vaskeriet, Småmekanisk, Snekkeriet, Serviceavdeling, Paravan
 
-Tilbud om å bli en del av allvekst????? 
+Tilbud om å bli en del av allvekst, grunderoppstart????? 
 
 søk på Sommerjob????
 
