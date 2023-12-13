@@ -1,25 +1,31 @@
 // App.js
 import React from 'react';
-
 import ProductList from './components/Product/ProductList'; // Import the ProductList component
+import {BrowserRouter as Router,Routes,Route,Link,} from "react-router-dom";
+import NavBar from './components/Layout/Navigation/Navbar/NavBar';
+import Home from './Pages/Home';
+import Products from './Pages/Store/Products';
+import ShoppingCart from './Pages/ShoppingCart';
+import Service from './Pages/Store/Service';
+
+
 
 const App = () => (
   <>
-    <header>
-      <h1>Nettbutikk</h1>
-      {/* Nav bar, will move this later*/}
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <ul>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#service">Service</a></li>
-          </ul>
-          <li><a href="#cart">Shopping Cart</a></li>
-          <li><a href="#Allvekst">Allvekst</a></li>
-        </ul>
-      </nav>
-    </header>
+
+      <div>
+        <NavBar />
+
+        <Routes>
+          <Route path="/" exact component={Home} />
+          <Route path="/products" component={Products} />
+          <Route path="/cart" component={ShoppingCart} />
+          <Route path="/service" component={Service} />
+        </Routes>
+
+        {/* Additional content or footer goes here */}
+      </div>
+
     <main>
       {/* Main content section, will also move this later*/}
       <section id="home">
