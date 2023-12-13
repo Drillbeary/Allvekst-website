@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import ProductList from './components/Product/ProductList'; // Import the ProductList component
+
+const App = () => (
+  <>
+    <header>
+      <h1>Nettbutikk</h1>
+      {/* Nav bar, will move this later*/}
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <ul>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#service">Service</a></li>
+          </ul>
+          <li><a href="#cart">Shopping Cart</a></li>
+          <li><a href="#Allvekst">Allvekst</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      {/* Main content section, will also move this later*/}
+      <section id="home">
+        <h2>Welcome to our webstore</h2>
+        <p>Find great products</p>
+      </section>
+    </main>
+    {/* Products section*/}
+    <section>
+      <ProductList/>
+    </section>
+    
+    {/* Footer section*/}
+    <footer>
+      <p>&copy; 2023 Web Store. All rights reserved.</p>
+    </footer>
+  </>
+);
 
 export default App;
