@@ -1,13 +1,19 @@
-import TilbudPrice from "../../Datadump/SmåmekaniskService.json"
+import TilbudPrice from "../../Datadump/Tilbud.json"
+import "../../Styles/Home.css"
 
 const Tilbud = () => (
-    <div className='tilbud-section'>
-      <h1>Tilbud</h1>
-      <ul>
-            {TilbudPrice.slice(0, 6).map((item) => (
-              <li key={item.id}>{item.name}, {item.price}</li>
-            ))}
-          </ul>
+    <div className='Tilbud-section'>
+      <div className='Grid-container'>
+      {TilbudPrice.slice(0, 4).map((item) => (
+    <div key={item.id} className="Product-card">
+      <img src={item.image} alt={item.name} />
+      <div className="Product-details">
+        <h3>{item.name}</h3>
+        <p>{item.price}</p>
+      </div>
+    </div>
+    ))}
+      </div>
     </div>
   );
 

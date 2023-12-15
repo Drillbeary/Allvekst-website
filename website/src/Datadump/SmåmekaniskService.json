@@ -13,7 +13,7 @@
   },
   {
     "id": 2,
-    "name": "Ryddesag og gresstrimmer (bensin)",
+    "name": "Gresstrimmer",
     "price": "kr. 1.100,-",
     "details": [
       "Bytte av bensinfilter.",
@@ -26,7 +26,7 @@
   },
   {
     "id": 3,
-    "name": "Gressklipper (bensin) fritid",
+    "name": "Gressklipper fritid",
     "price": "kr. 1100,-",
     "details": [
       "Bytte filter.",
@@ -39,7 +39,7 @@
   },
   {
     "id": 4,
-    "name": "Gressklipper (bensin) proff",
+    "name": "Gressklipper proff",
     "price": "kr. 1.340,-",
     "details": [
       "Bytte filter.",

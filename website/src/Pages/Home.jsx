@@ -8,18 +8,18 @@ import Tilbud from './SubPages/Tilbud'
 
 
 const Home = () => (
-  <div className='home'>
+  <div className='Home'>
+    
+    <div>
+ 
     <Tilbud/>
-
-    <div className='products-services-section'>
-    <Product/>
-
-
-      <div className='services-section'>
-      <Service/>
-
-      </div>
     </div>
+
+    <div className='Product-service-wrapper'>
+      
+    <Product/>
+    <Service/>
+    </div>   
   </div>
 );
 
