@@ -1,17 +1,17 @@
 [
     {
       "id": 1,
-      "name": "Leie av linduker per stk.",
+      "name": "linduker",
       "price": "kr 100,-"
     },
     {
       "id": 2,
-      "name": "Vasking og rulling av private duker, pr stk",
+      "name": "private duker",
       "price": "kr 50,-"
     },
     {
       "id": 3,
-      "name": "Vasking og rulling av privat sengetøy pr sett",
+      "name": "sengetøy",
       "price": "kr 50,-"
     }
   ]
