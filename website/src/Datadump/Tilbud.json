@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "name": "40 liter bjørk",
+      "price": "kr. 105,-"
+    },
+    {
+      "id": 2,
+      "name": "1000 liter tørr bjørkved",
+      "price": "kr. 1.300,-"
+    },
+    {
+      "id": 3,
+      "name": "1000 liter tørr furu",
+      "price": "kr. 1.100,-"
+    },
+    {
+        "id": 4,
+        "name": "Tennbrikketer",
+        "price": "kr. 100,-"
+    },
+    {
+    "id": 5,
+    "name": "PinneKjøtt Pinner",
+    "price": "kr. 120,-"
+    },
+    {
+        "id": 6,
+        "name": "Brus Kasse av ved",
+        "price": "kr. 350,-"
+        }
+  ]
