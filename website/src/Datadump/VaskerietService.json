@@ -1,0 +1,78 @@
+[
+    {
+      "id": 1,
+      "name": "Vask av dunjakke/kåpe",
+      "price": "kr 210,-"
+    },
+    {
+      "id": 2,
+      "name": "Vask av ytterjakke",
+      "price": "kr 210,-"
+    },
+    {
+      "id": 3,
+      "name": "Vask av kjeledress (Termo)",
+      "price": "kr 250,-"
+    },
+    {
+      "id": 4,
+      "name": "Vask av enkeltdyner syntetisk",
+      "price": "kr 250,-"
+    },
+    {
+      "id": 5,
+      "name": "Vask av dobbeldyner syntetisk",
+      "price": "kr 300,-"
+    },
+    {
+      "id": 6,
+      "name": "Vask enkeldyne dun",
+      "price": "kr 320,-"
+    },
+    {
+      "id": 7,
+      "name": "Vask dobbeldyne dun",
+      "price": "kr 380,-"
+    },
+    {
+      "id": 8,
+      "name": "Vask pute (syntetisk og dun)",
+      "price": "kr 100,-"
+    },
+    {
+      "id": 9,
+      "name": "Vask pute stor",
+      "price": "kr 150,-"
+    },
+    {
+      "id": 10,
+      "name": "Vask ullteppe/pledd",
+      "price": "kr 170,-"
+    },
+    {
+      "id": 11,
+      "name": "Vask sovepose enkel",
+      "price": "kr 250,-"
+    },
+    {
+      "id": 12,
+      "name": "Vask overmadrass enkel",
+      "price": "kr 350,-"
+    },
+    {
+      "id": 13,
+      "name": "Vask overmadrass dobbel",
+      "price": "kr 450,-"
+    },
+    {
+      "id": 14,
+      "name": "Vask matter per meter",
+      "price": "kr 100,-"
+    },
+    {
+      "id": 15,
+      "name": "Gulvteppe (store)",
+      "price": "kr 500,-"
+    }
+  ]
+  

@@ -1,0 +1,33 @@
+/* Home.css */
+
+.home {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .tilbud-section {
+    margin-bottom: 20px;
+  }
+  
+  .products-services-section {
+    display: flex;
+  }
+  
+  .products-section,
+  .services-section {
+    width: 50%;
+  }
+  
+  h1 {
+    color: #1a1a1a;
+  }
+  
+  h2 {
+    color: #0066cc;
+  }
+  
+  p {
+    color: #666;
+  }
