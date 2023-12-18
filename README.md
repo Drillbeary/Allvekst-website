@@ -1,5 +1,10 @@
 # Allvekst-website
 
+Note to self: Allvekst > Nettbutikk
+
+Mer om hva Allvekst gjør en enn nettbutikk
+Eventuelt gjør den mindre. See om å bruke vipps som betalings "Gateway"
+
 Starte på et prosjekt for å lage en ny nettside. 
 
 
@@ -39,7 +44,6 @@ Om bedriftene i allvekst -> Vaskeriet, Småmekanisk, Snekkeriet, Serviceavdeling
 
 Tilbud om å bli en del av allvekst, grunderoppstart????? 
 
-søk på Sommerjob????
 
 Todo:
 
