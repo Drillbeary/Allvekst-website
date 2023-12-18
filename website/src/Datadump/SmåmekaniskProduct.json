@@ -13,6 +13,11 @@
       "id": 3,
       "name": "En sprayflaske",
       "price": "kr 250,-"
+    },
+    {
+      "id": 4,
+      "name": "En Motorsag",
+      "price": "kr 2.500,-"
     }
   ]
   
