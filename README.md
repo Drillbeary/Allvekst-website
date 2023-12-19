@@ -39,8 +39,6 @@ Om bedriftene i allvekst -> Vaskeriet, Småmekanisk, Snekkeriet, Serviceavdeling
 
 Tilbud om å bli en del av allvekst, grunderoppstart????? 
 
-søk på Sommerjob????
-
 Todo:
 
 Decide backend
