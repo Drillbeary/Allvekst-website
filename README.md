@@ -42,4 +42,4 @@ Tilbud om å bli en del av allvekst, grunderoppstart?????
 Todo:
 
 Decide backend
-i cheated :I +1
+i cheated :I +2
