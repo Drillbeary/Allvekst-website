@@ -1,26 +1,38 @@
-// Home.js
-
+// Home.jsx
 import React from 'react';
-import '../Styles/Home.css'; // Import the CSS file for styling
-import Product from './SubPages/Product'
-import Service from './SubPages/Service'
-import Tilbud from './SubPages/Tilbud'
+import '../Styles/Home.css';
+import HeaderHome from '../Components/HeaderHome';
+import GridHome from '../Components/GridHome';
+import MenuIcon from '../Components/MenuIcon';
+import NewsHome from '../Components/NewsHome';
+import Footer from '../Components/Footer';
 
+function Home() {
+  return (
+    <div className="home">
+      <header>
+        <div className='Header-wrap'>
+          <HeaderHome />
+          </div>
+        <div className="menu-icon">
+          <MenuIcon />
+        </div>
+      </header>
 
-const Home = () => (
-  <div className='Home'>
-    
-    <div>
- 
-    <Tilbud/>
+      <section className="news">
+        <NewsHome />
+      </section>
+
+      <main className="categories">
+        <GridHome />
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
+  );
+}
 
-    <div className='Product-service-wrapper'>
-      
-    <Product/>
-    <Service/>
-    </div>   
-  </div>
-);
 
 export default Home;

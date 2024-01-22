@@ -1,6 +1,6 @@
 import TilbudPrice from "../../Datadump/Tilbud.json"
 import ShopCard from '../../Components/ShopCard'
-import "../../Styles/Home.css"
+import "../../Styles/AllvekstNettbutikk.css"
 
 const Tilbud = () => (
     <div className='Tilbud-section'>

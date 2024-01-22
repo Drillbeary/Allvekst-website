@@ -1,0 +1,86 @@
+/* Home.css */
+
+.AllvekstNettbutikk {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    
+  }
+  
+  .Tilbud-section {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+
+  }
+  
+  .Product-service-wrapper{
+    width: 100%;
+    padding: 0px;
+
+    margin: 10px;
+    display: flex;
+  }
+  .Products-section {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 2px;
+  }
+  
+  
+  .Service-section {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 2px;
+  }
+  
+  h1 {
+    color: #1a1a1a;
+  }
+  
+  h2 {
+    color: #0066cc;
+  }
+  
+  p {
+    color: #666;
+  }
+
+
+
+   /* Our product */
+  .Product-card{
+    border: 1px solid #ddd;
+    overflow: hidden;
+    width: 70%;
+    
+  
+  }
+
+  /* Our product sub catagories*/
+  .Grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px; /* Adjust the gap between items as needed */
+  }
+
+  
+
+
+
+
+
+
+
+  /*Our Serice sub catagories*/
+
+
+
+
+  /*  Add this to your stylesheet or in the component's style tag */
+
+ 

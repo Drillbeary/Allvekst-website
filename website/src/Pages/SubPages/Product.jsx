@@ -1,7 +1,7 @@
 import VaskerietProduct from '../../Datadump/VaskerietProduct.json'
 import SmåmekaniskProduct from '../../Datadump/SmåmekaniskProduct.json'
 import ShopCard from '../../Components/ShopCard'
-import "../../Styles/Home.css"
+import "../../Styles/AllvekstNettbutikk.css"
 
 const Products = () => (
   <div className='Products-section'>

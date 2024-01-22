@@ -1,6 +1,6 @@
 import SmåmekaniskService from '../../Datadump/SmåmekaniskService.json'
 import VaskerietService from '../../Datadump/VaskerietService.json'
-import "../../Styles/Home.css"
+import "../../Styles/AllvekstNettbutikk.css"
 import ShopCard from '../../Components/ShopCard'
 
 const Service = () => (
