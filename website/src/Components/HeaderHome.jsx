@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../Styles/Home.css'; // Import your CSS file
 import Video from '../Images/Allvekst/Droneshot.mp4';
-
+import PlayButton from '../Images/Allvekst/play-button.png'
 
 function HeaderHome() {
   const [text, setText] = useState('');
@@ -35,6 +35,8 @@ function HeaderHome() {
       </div>
       <div className='Header-video'>
       <video  ref={videoRef} src={Video} onClick={handleVideoClick} />    
+      {!playing && <img src={PlayButton} className="play-button" onClick={handleVideoClick} alt="Play video" />}
+
       </div>
       </div>
   );

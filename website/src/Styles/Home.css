@@ -27,6 +27,7 @@
 }
 
 .Header-video {
+  position: relative;
   float: right; /* Aligns the video to the right */
   width: 30%;
   height: 400px; /* Adjust as needed to change the size of the video */
@@ -49,6 +50,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   /* Style the button as needed */
+  /* For example, you might want to limit the size of the button */
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  background: none; /* Removes the background */
 }
 
 .categories .grid {
