@@ -24,7 +24,7 @@ function Home() {
       </section>
 
       <main className="categories">
-        <GridHome />
+        <GridHome/>
       </main>
 
       <footer>

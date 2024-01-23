@@ -1,44 +1,43 @@
 html {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  *, *::before, *::after {
-    box-sizing: inherit;
-    padding: 0;
-    margin: 0;
-  }
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
 
-  .app {
-    width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+.app {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    background-color: black;
-    margin-bottom: 20px;
-  }
+nav ul {
+  list-style: none;
+  display: flex;
+  background-color: black;
+  margin-bottom: 10px; /* Reduced margin */
+}
 
-  nav ul li {
-    padding: 20px;
-  }
+nav ul li {
+  padding: 10px; /* Reduced padding */
+}
 
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
 
-  .current {
-    border-bottom: 4px solid white;
-  }
+.current {
+  border-bottom: 2px solid white; /* Reduced border thickness */
+}
 
-  h1 {
-    margin-bottom: 20px;
-  }
+h1 {
+  margin-bottom: 10px; /* Reduced margin */
+}
 
-  p {
-    margin-bottom: 15px;
-  }
-
+p {
+  margin-bottom: 10px; /* Reduced margin */
+}
