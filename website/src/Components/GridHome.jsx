@@ -6,11 +6,11 @@ import * as txt from '../Text/Index.js'; // Import your Text
 
 function GridHome() {
   const categories = [
-    { id: 1, name: 'Småmekanisk', image: Images.Smamekanisk, Desc: txt.Småmekanisk.Desc, FlippedDesc: txt.Småmekanisk.FlippedDesc },
+    { id: 1, name: 'Allsidig Drift', image: Images.Serviceavdeling, Desc: txt.Serviceavdelingen.Desc, FlippedDesc: txt.Serviceavdelingen.FlippedDesc },
     { id: 2, name: 'Mormors', image: Images.Mormors, Desc: txt.Mormors.Desc, FlippedDesc: txt.Mormors.FlippedDesc },
     { id: 3, name: 'Vaskeriet', image: Images.Vaskeriet, Desc: txt.Småmekanisk.Desc, FlippedDesc: txt.Vaskeriet.FlippedDesc }, 
     { id: 4, name: 'Bygg og Anlegg', image: Images.Bygg, Desc: txt.Bygg.Desc, FlippedDesc: txt.Bygg.FlippedDesc },
-    { id: 5, name: 'Serviceavdeling', image: Images.Serviceavdeling, Desc: txt.Serviceavdelingen.Desc, FlippedDesc: txt.Serviceavdelingen.FlippedDesc },
+    { id: 5, name: 'Småmekanisk', image: Images.Smamekanisk, Desc: txt.Småmekanisk.Desc, FlippedDesc: txt.Småmekanisk.FlippedDesc },
     { id: 6, name: 'Tiltak', image: Images.Tiltak, Desc: txt.Tiltak.Desc, FlippedDesc: txt.Tiltak.FlippedDesc }
     ,
     
