@@ -1,5 +1,5 @@
-import VaskerietProduct from '../../Datadump/VaskerietProduct.json'
-import SmåmekaniskProduct from '../../Datadump/SmåmekaniskProduct.json'
+import VaskerietProduct from '../../Text/VaskerietProduct.json'
+import SmåmekaniskProduct from '../../Text/SmåmekaniskProduct.json'
 import ShopCard from '../../Components/ShopCard'
 import "../../Styles/AllvekstNettbutikk.css"
 

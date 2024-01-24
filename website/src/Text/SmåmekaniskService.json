@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "name": "Motorsag bensin",
+    "price": "kr. 1.100,-",
+    "details": [
+      "Bytte av bensinfilter.",
+      "Bytte tennplugg.",
+      "Sliping og justing av sagkjede.",
+      "Rengjøring.",
+      "Justering av forgasser og testing."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Gresstrimmer",
+    "price": "kr. 1.100,-",
+    "details": [
+      "Bytte av bensinfilter.",
+      "Bytte tennplugg.",
+      "Sliping skjæreblad, ved behov.",
+      "Påfylling av tråd, ved behov.",
+      "Rengjøring.",
+      "Justering av forgasser og testing."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Gressklipper fritid",
+    "price": "kr. 1100,-",
+    "details": [
+      "Bytte filter.",
+      "Bytte tennplugg.",
+      "Oljeskift.",
+      "Slipe kniv.",
+      "Rengjøring.",
+      "Justering og testing."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Gressklipper proff",
+    "price": "kr. 1.340,-",
+    "details": [
+      "Bytte filter.",
+      "Bytte tennplugg.",
+      "Oljeskift.",
+      "Slipe kniv.",
+      "Rengjøring.",
+      "Justering og testing."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Plentraktor",
+    "price": "kr. 2.400,-",
+    "details": [
+      "Bytte filtre.",
+      "Oljeskift.",
+      "Bytte tennplugg.",
+      "Smøring.",
+      "Slipe kniver.",
+      "Rengjøring.",
+      "Justering og testing."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Snøfreser",
+    "price": "kr. 1.350,-",
+    "details": [
+      "Sjekke filtre.",
+      "Oljeskift.",
+      "Smøring.",
+      "Bytte tennplugg.",
+      "Kontroll av reimer.",
+      "Rengjøring.",
+      "Testing."
+    ]
+  }
+]

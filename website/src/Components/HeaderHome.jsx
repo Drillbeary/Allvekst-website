@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../Styles/Home.css'; // Import your CSS file
-import Video from '../Images/Allvekst/Droneshot.mp4';
-import PlayButton from '../Images/Allvekst/play-button.png'
+import Video from '../Images/Droneshot.mp4';
+import PlayButton from '../Images/Logo/play-button.png'
 
 function HeaderHome() {
   const [text, setText] = useState('');
@@ -30,7 +30,7 @@ function HeaderHome() {
     <div className="Header-container">
       {/* ... */}
       <div className="Header-text">
-        <h2>Din Lokalbedrift</h2>
+        <h2>Din bedrift i din kommune</h2>
         <p>{text}</p>
       </div>
       <div className='Header-video'>

@@ -1,0 +1,80 @@
+[
+    {
+      "name": "Ingalill Råket",
+      "position": "Daglig leder",
+      "mobile": "(+47) 905 26 608",
+      "email": "ingalill@allvekst.no"
+    },
+    {
+      "name": "Annlaug Birkevaag",
+      "position": "Merkantilansvarlig",
+      "mobile": "(+47) 455 01 389",
+      "email": "annlaug@allvekst.no"
+    },
+    {
+      "name": "Ole Steinar Opsal",
+      "position": "Avdelingsleder Service",
+      "mobile": "(+47) 482 53 121",
+      "email": "olesteinar@allvekst.no"
+    },
+    {
+      "name": "Johanne Bugten Melvold",
+      "position": "Fagansvarlig - tiltak",
+      "mobile": "(+47) 934 00 009",
+      "email": "johanne@allvekst.no"
+    },
+    {
+      "name": "Marlene Lund Hageskal",
+      "position": "Fagansvarlig tiltak",
+      "mobile": "(+47) 916 82 844",
+      "email": "marlene@allvekst.no"
+    },
+    {
+      "name": "Bente Alstad",
+      "position": "Fagansvarlig - Kommunal avdeling",
+      "mobile": "(+47) 959 04 758",
+      "email": "bente@allvekst.no"
+    },
+    {
+      "name": "Trude Holm",
+      "position": "Avdelingsleder Vaskeriet",
+      "mobile": "(+47) 406 11 454",
+      "email": "trude@allvekst.no"
+    },
+    {
+      "name": "Britt Eli Belsvik Nygård",
+      "position": "Arbeidsveileder Vaskeriet",
+      "mobile": "(+47) 909 32 506",
+      "email": "britteli@allvekst.no"
+    },
+    {
+      "name": "Bjarne Vassli",
+      "position": "Avdelingsleder Bygg & Anleggsavdelingen",
+      "mobile": "(+47) 913 12 950",
+      "email": "bjarne@allvekst.no"
+    },
+    {
+      "name": "Kenneth Johansen",
+      "position": "Avdelingsleder Småmekanisk verksted",
+      "mobile": "(+47) 905 91 435",
+      "email": "kenneth@allvekst.no"
+    },
+    {
+      "name": "Michael Martinack",
+      "position": "Arbeidsleder Serviceavdelingen",
+      "mobile": "(+47) 455 03 078",
+      "email": "michael@allvekst.no"
+    },
+    {
+      "name": "Stig Roar Halvorsen",
+      "position": "Arbeidsveileder",
+      "mobile": "(+47) 47 416 36 147",
+      "email": "stigroar@allvekst.no"
+    },
+    {
+      "name": "Krister Halseth",
+      "position": "Fagarbeider Bygg & Anleggsavdelingen",
+      "mobile": "(+47) 407 40 068",
+      "email": "krister@allvekst.no"
+    }
+  ]

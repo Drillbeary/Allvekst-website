@@ -1,4 +1,4 @@
-import TilbudPrice from "../../Datadump/Tilbud.json"
+import TilbudPrice from "../../Text/Tilbud.json"
 import ShopCard from '../../Components/ShopCard'
 import "../../Styles/AllvekstNettbutikk.css"
 

@@ -1,5 +1,5 @@
-import SmåmekaniskService from '../../Datadump/SmåmekaniskService.json'
-import VaskerietService from '../../Datadump/VaskerietService.json'
+import SmåmekaniskService from '../../Text/SmåmekaniskService.json'
+import VaskerietService from '../../Text/VaskerietService.json'
 import "../../Styles/AllvekstNettbutikk.css"
 import ShopCard from '../../Components/ShopCard'
 
