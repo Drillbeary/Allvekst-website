@@ -1,80 +1,93 @@
 [
-    {
+  {
       "name": "Ingalill Råket",
       "position": "Daglig leder",
       "mobile": "(+47) 905 26 608",
-      "email": "ingalill@allvekst.no"
-    },
-    {
+      "email": "ingalill@allvekst.no",
+      "image": "../Images/Contact/Ingalill Råket.webp"
+  },
+  {
       "name": "Annlaug Birkevaag",
       "position": "Merkantilansvarlig",
       "mobile": "(+47) 455 01 389",
-      "email": "annlaug@allvekst.no"
-    },
-    {
+      "email": "annlaug@allvekst.no",
+      "image": "../Images/Contact/Annlaug Birkevaag.webp"
+  },
+  {
       "name": "Ole Steinar Opsal",
       "position": "Avdelingsleder Service",
       "mobile": "(+47) 482 53 121",
-      "email": "olesteinar@allvekst.no"
-    },
-    {
+      "email": "olesteinar@allvekst.no",
+      "image": "../Images/Contact/Ole Steinar Opsal.webp"
+  },
+  {
       "name": "Johanne Bugten Melvold",
       "position": "Fagansvarlig - tiltak",
       "mobile": "(+47) 934 00 009",
-      "email": "johanne@allvekst.no"
-    },
-    {
+      "email": "johanne@allvekst.no",
+      "image": "../Images/Contact/Johanne Bugten Melvold.webp"
+  },
+  {
       "name": "Marlene Lund Hageskal",
       "position": "Fagansvarlig tiltak",
       "mobile": "(+47) 916 82 844",
-      "email": "marlene@allvekst.no"
-    },
-    {
+      "email": "marlene@allvekst.no",
+      "image": "../Images/Contact/Marlene Lund Hageskal.webp"
+  },
+  {
       "name": "Bente Alstad",
       "position": "Fagansvarlig - Kommunal avdeling",
       "mobile": "(+47) 959 04 758",
-      "email": "bente@allvekst.no"
-    },
-    {
+      "email": "bente@allvekst.no",
+      "image": "../Images/Contact/Bente Alstad.webp"
+  },
+  {
       "name": "Trude Holm",
       "position": "Avdelingsleder Vaskeriet",
       "mobile": "(+47) 406 11 454",
-      "email": "trude@allvekst.no"
-    },
-    {
+      "email": "trude@allvekst.no",
+      "image": "../Images/Contact/Trude Holm.webp"
+  },
+  {
       "name": "Britt Eli Belsvik Nygård",
       "position": "Arbeidsveileder Vaskeriet",
       "mobile": "(+47) 909 32 506",
-      "email": "britteli@allvekst.no"
-    },
-    {
+      "email": "britteli@allvekst.no",
+      "image": "../Images/Contact/Britt Eli Belsvik Nygård.webp"
+  },
+  {
       "name": "Bjarne Vassli",
       "position": "Avdelingsleder Bygg & Anleggsavdelingen",
       "mobile": "(+47) 913 12 950",
-      "email": "bjarne@allvekst.no"
-    },
-    {
+      "email": "bjarne@allvekst.no",
+      "image": "../Images/Contact/Bjarne Vassli.webp"
+  },
+  {
       "name": "Kenneth Johansen",
       "position": "Avdelingsleder Småmekanisk verksted",
       "mobile": "(+47) 905 91 435",
-      "email": "kenneth@allvekst.no"
-    },
-    {
+      "email": "kenneth@allvekst.no",
+      "image": "../Images/Contact/Kenneth Johansen.webp"
+  },
+  {
       "name": "Michael Martinack",
       "position": "Arbeidsleder Serviceavdelingen",
       "mobile": "(+47) 455 03 078",
-      "email": "michael@allvekst.no"
-    },
-    {
+      "email": "michael@allvekst.no",
+      "image": "../Images/Contact/Michael Martinack.webp"
+  },
+  {
       "name": "Stig Roar Halvorsen",
       "position": "Arbeidsveileder",
       "mobile": "(+47) 47 416 36 147",
-      "email": "stigroar@allvekst.no"
-    },
-    {
+      "email": "stigroar@allvekst.no",
+      "image": "../Images/Contact/Stig Roar Halvorsen.webp"
+  },
+  {
       "name": "Krister Halseth",
       "position": "Fagarbeider Bygg & Anleggsavdelingen",
       "mobile": "(+47) 407 40 068",
-      "email": "krister@allvekst.no"
-    }
-  ]
+      "email": "krister@allvekst.no",
+      "image": "../Images/Contact/Krister Halseth.webp"
+  }
+]

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../Styles/Home.css'; // Import your CSS file
 import Video from '../Images/Droneshot.mp4';
 import PlayButton from '../Images/Logo/play-button.png'
@@ -26,20 +27,24 @@ function HeaderHome() {
       }
     };
 
-  return (
-    <div className="Header-container">
-      {/* ... */}
-      <div className="Header-text">
-        <h2>Din bedrift i din kommune</h2>
-        <p>{text}</p>
+    return (
+      <div className="Header-container">
+        <div className="Header-text">
+          <h2>Din bedrift i din kommune</h2>
+          <p>{text}</p>
+        </div>
+        <div className='Header-video'>
+          <div className="Header-links">
+            <Link to="/contact">Kontakt Oss!</Link>
+            <Link to="/company">Bedriften</Link>
+            <Link to="/lorem">lorem ipsum</Link>
+            {/* Add more links as needed */}
+          </div>
+          <video  ref={videoRef} src={Video} onClick={handleVideoClick} />    
+          {!playing && <img src={PlayButton} className="play-button" onClick={handleVideoClick} alt="Play video" />}
+        </div>
       </div>
-      <div className='Header-video'>
-      <video  ref={videoRef} src={Video} onClick={handleVideoClick} />    
-      {!playing && <img src={PlayButton} className="play-button" onClick={handleVideoClick} alt="Play video" />}
-
-      </div>
-      </div>
-  );
+    );
 }
 
 export default HeaderHome;

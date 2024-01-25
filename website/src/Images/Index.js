@@ -1,5 +1,5 @@
 // Images/index.js
-export { default as Smamekanisk } from './Småmekanisk/Småmekanisk.webp';
+export { default as Småmekanisk } from './Småmekanisk/Småmekanisk.webp';
 export { default as Mormors } from './Mormors/mormors.webp';
 export { default as Vaskeriet } from './Vaskeriet/Vaskeriet.webp';
 export { default as Bygg } from './Bygg/bygg-og-annleg.webp';

@@ -6,13 +6,13 @@ import * as txt from '../Text/Index.js'; // Import your Text
 
 function GridHome() {
   const categories = [
-    { id: 1, name: 'Allsidig Drift', image: Images.Serviceavdeling, Desc: txt.Serviceavdelingen.Desc, FlippedDesc: txt.Serviceavdelingen.FlippedDesc },
-    { id: 2, name: 'Mormors', image: Images.Mormors, Desc: txt.Mormors.Desc, FlippedDesc: txt.Mormors.FlippedDesc },
-    { id: 3, name: 'Vaskeriet', image: Images.Vaskeriet, Desc: txt.Småmekanisk.Desc, FlippedDesc: txt.Vaskeriet.FlippedDesc }, 
-    { id: 4, name: 'Bygg og Anlegg', image: Images.Bygg, Desc: txt.Bygg.Desc, FlippedDesc: txt.Bygg.FlippedDesc },
-    { id: 5, name: 'Småmekanisk', image: Images.Smamekanisk, Desc: txt.Småmekanisk.Desc, FlippedDesc: txt.Småmekanisk.FlippedDesc },
-    { id: 6, name: 'Tiltak', image: Images.Tiltak, Desc: txt.Tiltak.Desc, FlippedDesc: txt.Tiltak.FlippedDesc }
-    ,
+    // Importing Txt and image, In the format Name, Image, Desc, FlippedDesc
+    { id: 1, name: txt.Serviceavdelingen.Title, image: Images.Serviceavdeling, Desc: txt.Serviceavdelingen.Desc, FlippedDesc: txt.Serviceavdelingen.FlippedDesc },
+    { id: 2, name: txt.Mormors.Title, image: Images.Mormors, Desc: txt.Mormors.Desc, FlippedDesc: txt.Mormors.FlippedDesc },
+    { id: 3, name: txt.Vaskeriet.Title, image: Images.Vaskeriet, Desc: txt.Småmekanisk.Desc, FlippedDesc: txt.Vaskeriet.FlippedDesc }, 
+    { id: 4, name: txt.Bygg.Title, image: Images.Bygg, Desc: txt.Bygg.Desc, FlippedDesc: txt.Bygg.FlippedDesc },
+    { id: 5, name: txt.Småmekanisk.Title, image: Images.Småmekanisk, Desc: txt.Småmekanisk.Desc, FlippedDesc: txt.Småmekanisk.FlippedDesc },
+    { id: 6, name: txt.Tiltak.Title, image: Images.Tiltak, Desc: txt.Tiltak.Desc, FlippedDesc: txt.Tiltak.FlippedDesc }
     
     // Add more categories...
   ];
@@ -37,17 +37,38 @@ function Card({ category }) {
   };
 
   return (
+    // Sets up the card, and the flip animation with Css classes
     <div onClick={handleClick} className={`flip-card ${isFlipped ? 'flip-card-flipped' : ''}`}>
       <div className="flip-card-inner">
         <div className="flip-card-front">
           <img className="flip-card-image" src={category.image} alt={category.name} />
           <h2 className="flip-card-title">{category.name}</h2>
-          <p className="flip-card-short-desc">{category.Desc}</p>
+          <p>
+          {category.Desc.split('\n').map((line, i) => {
+            const boldLine = line.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
+            return (
+              <React.Fragment key={i}>
+                <span dangerouslySetInnerHTML={{ __html: boldLine }} />
+                <br />
+              </React.Fragment>
+            );
+          })}
+          </p>  
           <button className="flip-card-button">Show More</button>
         </div>
         <div className="flip-card-back">
           <h2 className="flip-card-title">{category.name}</h2>
-          <p className="flip-card-long-desc">{category.FlippedDesc}</p>
+          <p>
+          {category.FlippedDesc.split('\n').map((line, i) => {
+            const boldLine = line.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
+            return (
+              <React.Fragment key={i}>
+                <span dangerouslySetInnerHTML={{ __html: boldLine }} />
+                <br />
+              </React.Fragment>
+            );
+          })}
+          </p>         
           <button className="flip-card-button">Show Less</button>
         </div>
       </div>
