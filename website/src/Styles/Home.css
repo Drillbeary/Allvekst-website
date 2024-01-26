@@ -1,27 +1,31 @@
-.home {
+.home-wrap {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   width: 80vw;
   margin:auto;
   
 }
 
+
+
+
+/*  ------------- Header  ---------------*/
 .header-wrap {
-  width: 100vw; /* Full width of the viewport */
-  height: 100vh; /* Full height of the viewport */
-  overflow: auto; /* Add scrollbars if content overflows */
+  max-height: 100vh;
 }
 
 .Header-container {
   display: flex;
+  position: relative;
   flex-direction: row;
   width: 100%;
   height: 100%;
+  margin-bottom: 5%;
 }
 
 .Header-container > :first-child {
-  width: 45%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,18 +35,17 @@
 .Header-container > :last-child {
   display: flex;
   flex-direction: column;
-  width: 55%;
-  height: 100%;
+  width: 60%;
 }
 
 .Header-container > :last-child > :first-child {
   display: flex;
   justify-content: space-between;
-  height: 30%;
+  height: 20%;
 }
 
 .Header-container > :last-child > :last-child {
-  height: 70%;
+  height: 80%;
 }
 
 .Header-links a {
@@ -57,16 +60,21 @@
 }
 
 .Header-video {
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center; /* Add this line */
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100%; /* Add this line */
 }
 
 .Header-video video {
-  
-  width: 100%;
-  height: 100%;
+  width: 450px; /* Adjust as needed */
+  height: 500px; /* Adjust as needed */
   object-fit: cover;
+  position: relative;
+
+  
 }
 
 
@@ -74,29 +82,35 @@
 
 .play-button {
   position: absolute;
-  top: 65%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%); 
   background: none; 
-  max-width: 20%;
-  max-height: 20%;
+  max-width: 10%;
+  max-height: 10%;
 
 }
 
+/*  ------------- Header  ---------------*/
 
 
 
-/*  ------------- Grid content ---------------*/
-.categories { 
+
+
+
+
+
+
+/*  ------------- FlipCard content ---------------*/
+.categories-wrap { 
   margin: 10px 0 10px 0;
-  height: 100vh;
   
 }
 
 .flip-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(65vh, auto);
+  grid-auto-rows: minmax(70vh, auto);
   gap: 10px;
   
   
@@ -175,12 +189,23 @@
 }
 
 
-/*  ------------- Grid content ---------------*/
+/*  ------------- Flipcard content ---------------*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*  ------------- NEWS ---------------*/
-.news {
-  height: 100vh;
+.news-wrap {
+  height: 30vh;
   margin-top: 10px;
 }
 
@@ -244,12 +269,21 @@
 
 
 
+
+
+
+
+
+
+
+
 /*  ------------- Footer ---------------*/
 .footer {
   display: flex;
   justify-content: space-between;
   padding: 20px;
   background-color: #333; /* Dark gray */
+  width: 100vw
 }
 
 .footer-section {

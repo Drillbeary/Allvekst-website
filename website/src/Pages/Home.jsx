@@ -8,22 +8,20 @@ import Footer from '../Components/Footer';
 
 function Home() {
   return (
-    <div className="home">
-      <header>
-        <div className='Header-wrap'>
+    <div className="home-wrap">
+      <header className='Header-wrap'>
           <HeaderHome />
-        </div>
       </header>
 
-      <section className="news">
+      <section className="news-wrap">
         <NewsHome />
       </section>
 
-      <main className="categories">
+      <main className="categories-wrap">
         <GridHome/>
       </main>
 
-      <footer>
+      <footer className='Footer-wrap'>
         <Footer />
       </footer>
     </div>

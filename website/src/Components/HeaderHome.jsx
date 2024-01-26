@@ -30,14 +30,20 @@ function HeaderHome() {
     return (
       <div className="Header-container">
         <div className="Header-text">
+          <h1>Allvekst</h1>
           <h2>Din bedrift i din kommune</h2>
           <p>{text}</p>
         </div>
         <div className='Header-video'>
           <div className="Header-links">
-            <Link to="/contact">Kontakt Oss!</Link>
+
+            <Link to="/">Hjem</Link>
             <Link to="/company">Bedriften</Link>
-            <Link to="/lorem">lorem ipsum</Link>
+            <Link to="/contact">Kontakt Oss!</Link>
+            
+
+
+
             {/* Add more links as needed */}
           </div>
           <video  ref={videoRef} src={Video} onClick={handleVideoClick} />    
