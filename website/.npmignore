@@ -1,0 +1,2 @@
+# Do not ignore node_modules in this directory
+!node_modules/
