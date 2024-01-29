@@ -38,6 +38,11 @@ jobs:
         run: |
           mkdir deploy
           mv website deploy/website
+      - name: Upload deploy directory as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: deploy
+          path: ./deploy
 
   deploy:
     runs-on: ubuntu-latest
@@ -48,9 +53,10 @@ jobs:
   
     steps:
       - uses: actions/checkout@v4
+      - name: Download deploy directory from artifact
+        uses: actions/download-artifact@v2
         with:
-          path: '.'
-
+          name: deploy
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
