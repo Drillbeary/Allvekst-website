@@ -31,6 +31,8 @@ jobs:
           npm run test --if-present
       - name: List contents of website directory after build
         run: ls -al ./website
+      - name: List contents of node_modules/.bin directory
+        run: ls -al ./website/node_modules/.bin
 
   deploy:
     runs-on: ubuntu-latest
