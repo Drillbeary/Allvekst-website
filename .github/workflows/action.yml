@@ -34,15 +34,11 @@ jobs:
       - name: List contents of node_modules/.bin directory
         run: ls -al ./website/node_modules/.bin
 
-      - name: Prepare website directory for deployment
-        run: |
-          mkdir deploy
-          mv website deploy/website
-      - name: Upload deploy directory as artifact
+      - name: Upload website directory as artifact
         uses: actions/upload-artifact@v2
         with:
-          name: deploy
-          path: ./deploy
+          name: website
+          path: ./website
 
   deploy:
     runs-on: ubuntu-latest
@@ -53,10 +49,10 @@ jobs:
   
     steps:
       - uses: actions/checkout@v4
-      - name: Download deploy directory from artifact
+      - name: Download website directory from artifact
         uses: actions/download-artifact@v2
         with:
-          name: deploy
+          name: website
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
@@ -64,4 +60,4 @@ jobs:
           app-name: 'Allvekst'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D2A96987C1A147038BAFBF6921836F2E }}
-          package: ./deploy
+          package: ./website
