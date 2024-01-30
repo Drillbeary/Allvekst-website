@@ -43,6 +43,7 @@ jobs:
           path: |
             ./website/server.js
             ./website/package.json
+            ./website/build/**  # Include the build directory in the archive
 
   deploy:
     runs-on: ubuntu-latest
