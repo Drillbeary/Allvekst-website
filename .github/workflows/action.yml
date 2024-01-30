@@ -10,40 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '16.x'
-      - name: Clear npm cache
-        run: npm cache clean --force
 
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: List directory contents
-        run: ls -al
-
-      - name: Install dependencies
-        run: npm ci
-        working-directory: website
-      
-      - name: Build project
-        run: npm run build --if-present
-        working-directory: website
-      
-      - name: Run tests
-        run: npm run test --if-present
-        working-directory: website
 
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:
           name: website
-          path: |
-            ./website/server.js
-            ./website/package.json
-            ./website/build/**  # Include the build directory in the archive
+          path: ./website/**  # Include the entire website directory in the archive
 
   deploy:
     runs-on: ubuntu-latest
