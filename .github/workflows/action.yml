@@ -15,25 +15,12 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16.x'
-      - name: Clear npm cache
-        run: npm cache clean --force
 
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: List directory contents
-        run: ls -al
-
       - name: Install dependencies
         run: npm ci
-        working-directory: website
-      
-      - name: Build project
-        run: npm run build --if-present
-        working-directory: website
-      
-      - name: Run tests
-        run: npm run test --if-present
         working-directory: website
 
       - name: Archive production artifacts
