@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd website
-          npm ci
+          npm install --also=dev
 
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
