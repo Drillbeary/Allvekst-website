@@ -50,4 +50,4 @@ jobs:
           app-name: 'Allvekst'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D2A96987C1A147038BAFBF6921836F2E }}
-          package: ./website
+          package: .
