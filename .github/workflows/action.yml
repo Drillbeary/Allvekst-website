@@ -54,7 +54,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: website
-          path: ./website/build
+          path: ./website
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -63,4 +63,4 @@ jobs:
           app-name: 'Allvekst'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D2A96987C1A147038BAFBF6921836F2E }}
-          package: ./website/build
+          package: ./website
