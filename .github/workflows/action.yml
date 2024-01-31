@@ -29,7 +29,7 @@ jobs:
           context: .
           file: ./website/Dockerfile
           push: true
-          tags: drillbeary/Allvekst:latest
+          tags: drillbeary/allvekst:latest
 
   deploy:
     runs-on: ubuntu-latest
@@ -46,4 +46,4 @@ jobs:
           app-name: 'Allvekst'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D2A96987C1A147038BAFBF6921836F2E }}
-          images: drillbeary/Allvekst:latest
+          images: drillbeary/allvekst:latest
