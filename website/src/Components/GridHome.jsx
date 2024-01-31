@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../Styles/Home.css'; // Import your CSS file
 import * as Images from '../Images/Index.js'; // Import your images
+import '../Styles/Home.css'; // Import your CSS file
 import * as txt from '../Text/Index.js'; // Import your Text
 
 
@@ -9,7 +9,7 @@ function GridHome() {
     // Importing Txt and image, In the format Name, Image, Desc, FlippedDesc
     { id: 1, name: txt.Serviceavdelingen.Title, image: Images.Serviceavdeling, Desc: txt.Serviceavdelingen.Desc, FlippedDesc: txt.Serviceavdelingen.FlippedDesc },
     { id: 2, name: txt.Mormors.Title, image: Images.Mormors, Desc: txt.Mormors.Desc, FlippedDesc: txt.Mormors.FlippedDesc },
-    { id: 3, name: txt.Vaskeriet.Title, image: Images.Vaskeriet, Desc: txt.Småmekanisk.Desc, FlippedDesc: txt.Vaskeriet.FlippedDesc }, 
+    { id: 3, name: txt.Vaskeriet.Title, image: Images.Vaskeriet, Desc: txt.Vaskeriet.Desc, FlippedDesc: txt.Vaskeriet.FlippedDesc },
     { id: 4, name: txt.Bygg.Title, image: Images.Bygg, Desc: txt.Bygg.Desc, FlippedDesc: txt.Bygg.FlippedDesc },
     { id: 5, name: txt.Småmekanisk.Title, image: Images.Småmekanisk, Desc: txt.Småmekanisk.Desc, FlippedDesc: txt.Småmekanisk.FlippedDesc },
     { id: 6, name: txt.Tiltak.Title, image: Images.Tiltak, Desc: txt.Tiltak.Desc, FlippedDesc: txt.Tiltak.FlippedDesc }
@@ -53,7 +53,7 @@ function Card({ category }) {
               </React.Fragment>
             );
           })}
-          </p>  
+          </p>
           <button className="flip-card-button">Show More</button>
         </div>
         <div className="flip-card-back">
@@ -68,7 +68,7 @@ function Card({ category }) {
               </React.Fragment>
             );
           })}
-          </p>         
+          </p>
           <button className="flip-card-button">Show Less</button>
         </div>
       </div>
