@@ -45,4 +45,4 @@ jobs:
           app-name: 'Allvekst'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D2A96987C1A147038BAFBF6921836F2E }}
-          images: your-dockerhub-username/your-repo-name:latest
+          images: drillbeary/Allvekst:latest
