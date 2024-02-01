@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../Styles/Home.css'; // Import your CSS file
 import backupImage from '../Images/Logo/Allvekst-logo.png';
+import '../Styles/Home.css'; // Import your CSS file
 
 function NewsHome() {
   const [selectedCategory, setSelectedCategory] = useState('Nyheter');
@@ -26,9 +26,15 @@ function NewsHome() {
   return (
     <div className="news-home">
         <nav className='news-nav'>
-            <button  onClick={() => setSelectedCategory('Nyheter')}>Nyheter</button>
-            <button  onClick={() => setSelectedCategory('Bedrifts Avis')}>Bedrifts Avis</button>
-            <button  onClick={() => setSelectedCategory('Videos')}>Videos</button>
+            {Object.keys(newsCategories).map((category, index) => (
+                <button
+                    key={index}
+                    onClick={() => setSelectedCategory(category)}
+                    className={selectedCategory === category ? 'nav-active' : ''}
+                >
+                    {category}
+                </button>
+            ))}
         </nav>
         <div className='news-container'>
             {newsCategories[selectedCategory].map((news, index) => (
@@ -38,8 +44,8 @@ function NewsHome() {
                 <p>{news.summary}</p>
                 </div>
                 <img className='news-image'
-                    src={news.image} 
-                    alt={news.title} 
+                    src={news.image}
+                    alt={news.title}
                     onError={(e) => {e.target.onerror = null; e.target.src=backupImage}}
                 />
                 </div>

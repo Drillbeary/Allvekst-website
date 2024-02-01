@@ -37,12 +37,11 @@ function Card({ category }) {
   };
 
   return (
-    // Sets up the card, and the flip animation with Css classes
-    <div onClick={handleClick} className={`flip-card ${isFlipped ? 'flip-card-flipped' : ''}`}>
+    <div className={`flip-card ${isFlipped ? 'flip-card-flipped' : ''}`}>
       <div className="flip-card-inner">
         <div className="flip-card-front">
-          <img className="flip-card-image" src={category.image} alt={category.name} />
-          <h2 className="flip-card-title">{category.name}</h2>
+          <div><h1 className="flip-card-title">{category.name}</h1></div>
+          <div>
           <p>
           {category.Desc.split('\n').map((line, i) => {
             const boldLine = line.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
@@ -54,10 +53,14 @@ function Card({ category }) {
             );
           })}
           </p>
-          <button className="flip-card-button">Show More</button>
+          <img className="flip-card-image" src={category.image} alt={category.name} />
+          </div>
+          
         </div>
         <div className="flip-card-back">
-          <h2 className="flip-card-title">{category.name}</h2>
+        <div><h1 className="flip-card-title">{category.name}</h1></div>
+          <div>
+          <img className="flip-card-image" src={category.image} alt={category.name} />
           <p>
           {category.FlippedDesc.split('\n').map((line, i) => {
             const boldLine = line.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
@@ -69,10 +72,11 @@ function Card({ category }) {
             );
           })}
           </p>
-          <button className="flip-card-button">Show Less</button>
+          </div>
         </div>
       </div>
+      <div onClick={handleClick} className="flip-card-clickable-area" style={{ right: isFlipped ? 'auto' : '0', left: isFlipped ? '0' : 'auto' }}></div>
     </div>
   );
-};
+}
 export default GridHome;
