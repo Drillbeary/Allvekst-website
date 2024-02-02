@@ -1,4 +1,4 @@
-name: Build and deploy Docker image to Azure Web App - Allvekst
+name: Build and deploy Docker image to Azure Web App - Allvekst 
 
 on:
   push:
