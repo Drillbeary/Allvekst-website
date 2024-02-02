@@ -55,7 +55,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <p className='Footer-rights'>© 2024 Allvekst AS. All rights reserved. | Website by <a href="https://www.linkedin.com/in/sander-halseth-4267a2287/">Sander Halseth</a></p>
+      <p className='Footer-rights'>© 2024 Allvekst AS. All rights reserved. | <a href='https://github.com/Drillbeary/Allvekst-website'>Website</a> by <a href="https://www.linkedin.com/in/sander-halseth-4267a2287/">Sander Halseth</a></p>
     </footer>
   );
 }
