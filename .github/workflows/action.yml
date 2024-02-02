@@ -47,3 +47,12 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D2A96987C1A147038BAFBF6921836F2E }}
           images: drillbeary/allvekst:latest
+
+      - name: Azure login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+        
+      - name: Restart Web App
+        run: |
+          az webapp restart --name Allvekst --resource-group Allvekst_group
