@@ -1,10 +1,10 @@
 import React from 'react';
-import '../Styles/Home.css';
-import FacebookIcon from '../Images/Logo/facebook-icon.png'; 
-import InstagramIcon from '../Images/Logo/InstagramIcon.png'
 import ISO from '../Images/Logo/ISO-LOGO.webp';
+import InstagramIcon from '../Images/Logo/InstagramIcon.png';
+import FacebookIcon from '../Images/Logo/facebook-icon.png';
 import Miljøfyrtårn from '../Images/Logo/miljofyrtarn.webp';
 import samfunnsbedriftene from '../Images/Logo/samfunnsbedriftene.webp';
+import '../Styles/Home.css';
 
 function Footer() {
   return (
