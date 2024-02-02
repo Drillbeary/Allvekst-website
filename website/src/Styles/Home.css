@@ -154,7 +154,7 @@
 
 /*  ------------- FlipCard content ---------------*/
 .categories-wrap {
-  margin: 10px 0 10px 0;
+  margin: 10vh 0 10vh 0;
   
 }
 
@@ -342,7 +342,7 @@
 }
 
 .news-nav button.nav-active {
-  border-bottom: 2px solid #000; /* Add a border under the active button */
+  border-bottom: 2px solid #00000050;; /* Add a border under the active button */
 }
 
 .news-container {
@@ -394,16 +394,24 @@
 
 /*  ------------- Footer ---------------*/
 .footer {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: #333; /* Dark gray */
-  width: 100vw
+  background-color: #ffffff; /* Dark gray */
+  border-top: 1px solid #00000050; /* Add a 1px border to the top */
 }
 
 .footer-section {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly; /* or space-evenly */
+  flex: 1;
+  margin-bottom: 5vh;
+}
+.footer-section h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+  color: #00000050;
 }
 
 .footer-section .footer-content {
@@ -411,17 +419,25 @@
   flex-direction: row;
   align-items: center; /* Aligns items vertically in the middle */
 }
+.Footer-rights {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1; /* Adjust as needed */
+}
 
 .footer-section img {
-  width: 30px;
-  height: 30px;
+  min-width: 50px;
+  min-height: 50px;
+  height: 7vh;
 }
-/* Adds hoover effects for the social images */
-.footer .footer-content-social img {
+/* Adds hover effects for the social images and .footer-content images */
+.footer .footer-content-social img, .footer .footer-content img {
   transition: transform 0.3s ease; /* Smooth transition */
 }
 
-.footer .footer-content-social img:hover {
+.footer .footer-content-social img:hover, .footer .footer-content img:hover {
   transform: scale(1.2); /* Scales the image up to 120% */
 }
 
