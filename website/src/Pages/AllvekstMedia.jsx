@@ -12,7 +12,7 @@ const AllvekstMedia = () => {
         <section className="company-summary">
           <h2>About Allvekst Media</h2>
           <p>
-            Allvekst Media specializes in delivering cutting-edge IT solutions to meet the digital needs 
+            Allvekst Media specializes in delivering cutting-edge IT solutions to meet the digital needs
             of businesses and individuals. From web development to multimedia creation, we bring innovation
             and technology together.
           </p>

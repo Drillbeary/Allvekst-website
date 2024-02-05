@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Video from '../Images/Allvekst-AS-2022.mp4';
 import AllvekstLogo from "../Images/Logo/Allvekst-logo.png";
-import PlayButton from '../Images/Logo/play-button.png';
+import PlayButton from '../Images/Logo/play-button.svg';
 import '../Styles/Home.css'; // Import your CSS file
 import data from '../Text/Allvekst-Home.json';
 

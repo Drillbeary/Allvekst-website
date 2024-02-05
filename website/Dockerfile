@@ -1,3 +1,7 @@
+#To run docker locally do
+# docker build -t my-app -f ./website/Dockerfile .
+# docker run -p 8080:8080 -d my-app
+
 # ---- Build Stage ----
 FROM node:16 AS build
 

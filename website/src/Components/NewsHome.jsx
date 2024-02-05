@@ -1,32 +1,49 @@
-import React, { useState } from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import backupImage from '../Images/Logo/Allvekst-logo.png';
 import '../Styles/Home.css'; // Import your CSS file
 
 function NewsHome() {
-  const [selectedCategory, setSelectedCategory] = useState('Nyheter');
+  const [selectedCategory, setSelectedCategory] = useState('Facebook');
+  const [videos, setVideos] = useState([]);
 
-  const newsCategories = {
-    'Nyheter': [
+
+  // fetch youtube videos from API
+  useEffect(() => {
+    axios.get('/fetch-youtube-videos')
+      .then(response => {
+        const videoData = response.data.map(video => ({
+          title: video.snippet.title,
+          summary: video.snippet.description,
+          image: video.snippet.thumbnails.default.url,
+          link: `https://www.youtube.com/watch?v=${video.id.videoId}`
+        }));
+        setVideos(videoData);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  }, []);
+
+  const newsCategories = { // The news categories
+    'Facebook': [
       { title: 'Nyheter 1', summary: 'Summary of Nyheter 1', image: 'url-to-image-1' },
       { title: 'Nyheter 2', summary: 'Summary of Nyheter 2', image: 'url-to-image-2' },
       { title: 'Nyheter 3', summary: 'Summary of Nyheter 3', image: 'url-to-image-3' }
     ],
-    'Bedrifts Avis': [
+    'Instagram': [
       { title: 'Avis 1', summary: 'Summary of Avis 4', image: 'url-to-image-4' },
       { title: 'Avis 2', summary: 'Summary of Avis 5', image: 'url-to-image-5' },
       { title: 'Avis 3', summary: 'Summary of Avis 6', image: 'url-to-image-6' }
     ],
-    'Videos': [
-      { title: 'Videos 1', summary: 'Summary of Videos 1', image: 'url-to-image-7' },
-      { title: 'Videos 2', summary: 'Summary of Videos 2', image: 'url-to-image-8' },
-      { title: 'Videos 3', summary: 'Summary of Videos 3', image: 'url-to-image-9' }
-    ]
+    'Youtube': videos // Add the fetched videos to the news categories
   };
 
   return (
     <div className="news-home">
         <nav className='news-nav'>
             {Object.keys(newsCategories).map((category, index) => (
+              // Map through the news categories and create a button for each category
                 <button
                     key={index}
                     onClick={() => setSelectedCategory(category)}
@@ -37,20 +54,28 @@ function NewsHome() {
             ))}
         </nav>
         <div className='news-container'>
-            {newsCategories[selectedCategory].map((news, index) => (
-                <div key={index} className="news-content">
-                <div className='news-text'>
+          {newsCategories[selectedCategory].map((news, index) => (
+            // Map through the news and create a div for each news
+            <div
+              key={index}
+              className="news-content"
+              // Open news in new tab
+              onClick={() =>{ const newWindow = window.open(news.link, '_blank'); newWindow.opener = null; }}
+              style={{ cursor: 'pointer' }}
+            >
+              <div className='news-text'>
                 <h2>{news.title}</h2>
                 <p>{news.summary}</p>
-                </div>
-                <img className='news-image'
-                    src={news.image}
-                    alt={news.title}
-                    onError={(e) => {e.target.onerror = null; e.target.src=backupImage}}
-                />
-                </div>
-            ))}
+              </div>
+              <img
+                className='news-image'
+                src={news.image}
+                alt={news.title}
+                onError={(e) => {e.target.onerror = null; e.target.src=backupImage}}
+              />
             </div>
+          ))}
+        </div>
     </div>
   );
 }

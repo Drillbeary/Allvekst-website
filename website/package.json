@@ -2,9 +2,11 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8080",
   "dependencies": {
-    
+    "axios": "^1.6.7",
     "bootstrap": "^5.3.2",
+    "dotenv": "^16.4.1",
     "express": "^4.18.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -14,9 +16,10 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "concurrently": "^8.2.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
   },
   "engines": {
     "node": "16.x"
@@ -24,7 +27,8 @@
   "scripts": {
     "start": "node server.js",
     "build": "react-scripts build",
-    "serve": "react-scripts start",
+    "devStart": "react-scripts start",
+    "dev": "concurrently \"npm run devStart\" \"node server.dev.js\"",
     "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject"
   },

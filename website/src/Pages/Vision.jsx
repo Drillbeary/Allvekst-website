@@ -1,6 +1,8 @@
 
-const Company = () => {
-  return null;
-};
+const Vision = () => {
+    return (
+        null
+    );
+}
 
-export default Company;
+export default Vision;

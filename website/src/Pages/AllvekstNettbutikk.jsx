@@ -2,16 +2,15 @@
 
 import React from 'react';
 import '../Styles/AllvekstNettbutikk.css'; // Import the CSS file for styling
-import Product from './SubPages/Product'
-import Service from './SubPages/Service'
-import Tilbud from './SubPages/Tilbud'
+import Product from './SubPages/Product';
+import Service from './SubPages/Service';
+import Tilbud from './SubPages/Tilbud';
 
 
 const AllvekstNettbutikk = () => (
   <div className='AllvekstNettbutikk'>
     
     <div>
- 
     <Tilbud/>
     </div>
 
@@ -19,7 +18,7 @@ const AllvekstNettbutikk = () => (
       
     <Product/>
     <Service/>
-    </div>   
+    </div>
   </div>
 );
 
