@@ -15,6 +15,29 @@
 
 
 /*  ------------- Header  ---------------*/
+@media (max-width: 1000px) {
+
+  
+  .Header-menu-icon {
+    display: block;
+  }
+
+    .Header-nav {
+    display: none;
+  }
+      /* Show the links when the button is clicked */
+  .Header-links.button-clicked .Header-nav {
+    display: flex;
+  }
+
+  /* Style the individual links */
+  .Header-links .Header-nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    margin: 10px 0;
+  }
+}
 .header-wrap {
   max-height: 100vh;
 }
@@ -55,8 +78,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
-  height: 60%;
+  width: 60%;
+  height: auto;
   z-index: -1;
 }
 
@@ -87,7 +110,9 @@
   margin: 0;
   padding: 0;
 }
-
+.Header-menu-icon {
+  display: none;
+}
 .Header-links {
   display: flex;
   flex-direction: row;
@@ -316,6 +341,20 @@
 
 
 /*  ------------- NEWS ---------------*/
+@media (max-width: 1000px) { /* Adjust this value based on when you want the desktop styles to take effect */
+  .news-container {
+    flex-direction: row;
+  }
+  
+  .news-category-text {
+    display: none;
+  }
+
+  .news-category-icon {
+    display: inline-block;
+  }
+}
+
 .news-wrap {
   margin: 3vh 0 3vh 0;
 }
@@ -340,7 +379,12 @@
   border: 0px solid #000;
   background: none; /* Remove default button background */
 }
-
+.news-category-text {
+  display: inline-block;
+}
+.news-category-icon {
+  display: none;
+}
 .news-nav button.nav-active {
   border-bottom: 2px solid #00000050;; /* Add a border under the active button */
 }
@@ -393,9 +437,22 @@
 
 
 /*  ------------- Footer ---------------*/
+@media (max-width: 1000px) {
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: bottom 50px;
+  }
+
+  .footer-section .footer-content {
+    order: 3; /* This will move it to the bottom */
+  }
+}
 .footer {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
   background-color: #ffffff; /* Dark gray */
@@ -412,6 +469,7 @@
   margin-bottom: 10px;
   font-size: 2em;
   color: #00000050;
+  text-align: center;
 }
 
 .footer-section .footer-content {
@@ -420,9 +478,10 @@
   align-items: center; /* Aligns items vertically in the middle */
 }
 .Footer-rights {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
+  height:auto;
   text-align: center;
   z-index: 1; /* Adjust as needed */
 }

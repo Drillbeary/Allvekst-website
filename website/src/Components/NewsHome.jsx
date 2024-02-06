@@ -1,7 +1,11 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import backupImage from '../Images/Logo/Allvekst-logo.png';
+import FacebookIcon from '../Images/Logo/facebook-icon.svg';
+import InstagramIcon from '../Images/Logo/instagram-icon.svg';
+import YoutubeIcon from '../Images/Logo/youtube-icon.svg';
 import '../Styles/Home.css'; // Import your CSS file
+
 
 function NewsHome() {
   const [selectedCategory, setSelectedCategory] = useState('Facebook');
@@ -38,6 +42,11 @@ function NewsHome() {
     ],
     'Youtube': videos // Add the fetched videos to the news categories
   };
+  const categoryIcons = {
+    'Facebook': <img style={{height: '48px'}} src={FacebookIcon} alt="Facebook" />,
+    'Instagram': <img style={{height: '48px'}} src={InstagramIcon} alt="Instagram" />,
+    'Youtube': <img style={{height: '48px'}} src={YoutubeIcon} alt="Youtube" />,
+  };
 
   return (
     <div className="news-home">
@@ -49,7 +58,8 @@ function NewsHome() {
                     onClick={() => setSelectedCategory(category)}
                     className={selectedCategory === category ? 'nav-active' : ''}
                 >
-                    {category}
+                    <span className="news-category-text">{category}</span>
+                    <span className="news-category-icon">{categoryIcons[category]}</span>
                 </button>
             ))}
         </nav>

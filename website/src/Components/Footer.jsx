@@ -1,8 +1,8 @@
 import React from 'react';
 import ISO from '../Images/Logo/ISO-LOGO.svg';
-import InstagramIcon from '../Images/Logo/InstagramIcon.svg';
 import samfunnsbedriftene from '../Images/Logo/Samfunnsbedriftene.svg';
 import FacebookIcon from '../Images/Logo/facebook-icon.svg';
+import InstagramIcon from '../Images/Logo/instagram-icon.svg';
 import Miljøfyrtårn from '../Images/Logo/miljofyrtarn.webp';
 import '../Styles/Home.css';
 

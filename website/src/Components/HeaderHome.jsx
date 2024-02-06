@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Video from '../Images/Allvekst-AS-2022.mp4';
 import AllvekstLogo from "../Images/Logo/Allvekst-logo.png";
+import MenuIcon from '../Images/Logo/menu-icon.svg';
 import PlayButton from '../Images/Logo/play-button.svg';
 import '../Styles/Home.css'; // Import your CSS file
 import data from '../Text/Allvekst-Home.json';
@@ -26,7 +27,10 @@ function HeaderHome() {
         setPlaying(!playing);
       }
     };
-
+  function handleClick() {
+    const links = document.querySelector('.Header-links');
+    links.classList.toggle('button-clicked');
+  }
     return (
       <div className="Header-container">
         <div className="Header-text">
@@ -37,15 +41,14 @@ function HeaderHome() {
         </div>
         <div className='Header-video'>
           <div className="Header-links">
-
+          <button onClick={handleClick} className="Header-menu-icon">
+            <img src={MenuIcon} alt="Menu" />
+          </button>
+            <div className="Header-nav">
             <Link to="/">Hjem</Link>
             <Link to="/Vision">Vår Visjon</Link>
             <Link to="/contact">Kontakt Oss!</Link>
-            
-
-
-
-            {/* Add more links as needed */}
+            </div>
           </div>
           <video  ref={videoRef} src={Video} onClick={handleVideoClick} />
           {!playing && <img src={PlayButton} className="play-button" onClick={handleVideoClick} alt="Play video" />}
