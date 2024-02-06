@@ -20,7 +20,6 @@ build/
 .env
 
 .vscode
-server.dev.js
 
 npm-debug.log*
 yarn-debug.log*
