@@ -31,7 +31,7 @@ function Footer() {
             <tbody>
               <tr>
                 <td>Man - Fre:</td>
-                <td>8am - 3pm</td>
+                <td>7:30 - 15:00</td>
               </tr>
               <tr>
                 <td>lør - Søn:</td>
@@ -41,7 +41,6 @@ function Footer() {
           </table>
         </div>
         <div>
-          <h1>Partnere</h1>
           <div className='footer-content'>
           <a href="https://standard.no/standardisering/iso-standarder/" target="_blank" rel="noreferrer">
               <img src={ISO} alt="ISO-logo" />

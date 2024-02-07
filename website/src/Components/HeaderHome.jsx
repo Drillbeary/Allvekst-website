@@ -32,27 +32,27 @@ function HeaderHome() {
     links.classList.toggle('button-clicked');
   }
     return (
+      <div className='Header-wrap'>
+        <div className="Header-nav">
+      <button onClick={handleClick} className="Header-menu-icon">
+        <img src={MenuIcon} alt="Menu" />
+      </button>
+        <div className="Header-links">
+        <Link to="/Vision" >Vår Visjon</Link>
+        <Link to="/contact" >Kontakt Oss!</Link>
+        </div>
+      </div>
       <div className="Header-container">
         <div className="Header-text">
         <img src={AllvekstLogo} alt="Allvekst Logo" className='Header-Logo' />
-          <h1>bytt til svg bilder</h1>
           <h2>Folk- Først og Fremst</h2>
           <p>{text}</p>
         </div>
         <div className='Header-video'>
-          <div className="Header-links">
-          <button onClick={handleClick} className="Header-menu-icon">
-            <img src={MenuIcon} alt="Menu" />
-          </button>
-            <div className="Header-nav">
-            <Link to="/">Hjem</Link>
-            <Link to="/Vision">Vår Visjon</Link>
-            <Link to="/contact">Kontakt Oss!</Link>
-            </div>
-          </div>
           <video  ref={videoRef} src={Video} onClick={handleVideoClick} />
           {!playing && <img src={PlayButton} className="play-button" onClick={handleVideoClick} alt="Play video" />}
         </div>
+      </div>
       </div>
     );
 }

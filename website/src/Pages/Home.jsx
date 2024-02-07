@@ -1,10 +1,9 @@
 // Home.jsx
 import React from 'react';
-import '../Styles/Home.css';
-import HeaderHome from '../Components/HeaderHome';
-import GridHome from '../Components/GridHome';
-import NewsHome from '../Components/NewsHome';
 import Footer from '../Components/Footer';
+import GridHome from '../Components/GridHome';
+import HeaderHome from '../Components/HeaderHome';
+import '../Styles/Home.css';
 
 function Home() {
   return (
@@ -12,11 +11,11 @@ function Home() {
       <header className='Header-wrap'>
           <HeaderHome />
       </header>
-
+{/*
       <section className="news-wrap">
         <NewsHome />
       </section>
-
+  */}
       <main className="categories-wrap">
         <GridHome/>
       </main>

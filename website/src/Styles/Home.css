@@ -8,36 +8,20 @@
   margin:auto;
 
   font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
   
 }
+@media (max-width: 1000px) {
+  .home-wrap {
+    width:  95vw;
+  }
 
+}
 
 
 
 /*  ------------- Header  ---------------*/
-@media (max-width: 1000px) {
 
-  
-  .Header-menu-icon {
-    display: block;
-  }
-
-    .Header-nav {
-    display: none;
-  }
-      /* Show the links when the button is clicked */
-  .Header-links.button-clicked .Header-nav {
-    display: flex;
-  }
-
-  /* Style the individual links */
-  .Header-links .Header-nav a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px;
-    margin: 10px 0;
-  }
-}
 .header-wrap {
   max-height: 100vh;
 }
@@ -65,13 +49,6 @@
   width: 60%;
 }
 
-.Header-container > :last-child > :first-child {
-  height: 20%;
-}
-
-.Header-container > :last-child > :last-child {
-  height: 80%;
-}
 
 .Header-Logo {
   position: relative;
@@ -82,6 +59,7 @@
   height: auto;
   z-index: -1;
 }
+
 
 .Header-text h1 {
   position: absolute;
@@ -111,28 +89,30 @@
   padding: 0;
 }
 .Header-menu-icon {
+  position: absolute;
   display: none;
+  margin: 1px;
+  top: 0;
+  right: 0;
+  z-index: 10;
+
+}
+
+
+.Header-nav {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20%;
+  min-height: 64px;
 }
 .Header-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  height: 100%;
-  gap: 40px;
+  gap: 20px;
 }
 
-.Header-links a {
-  margin: 20px 0 40px 0;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-  font-size: 30px;
-}
-
-.Header-links a:hover {
-  color: rgb(0, 4, 255);
-}
 
 .Header-video {
   display: flex;
@@ -165,6 +145,52 @@
   max-width: 10%;
   max-height: 10%;
 
+}
+.Header-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 1000px) {
+  .Header-nav .Header-menu-icon {
+    display: block;
+  }
+
+  .Header-nav .Header-links {
+    display: none;
+  }
+  
+  /* Show the links when the button is clicked */
+  .Header-links.button-clicked {
+    display: flex;
+  }
+
+  .Header-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .Header-container > :first-child {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Header-container > :last-child {
+    width: 100%;
+  }
+
+  .Header-Logo {
+    width: 30%;
+  }
+  .Header-text h2 {
+    font-size: 32px;
+  }
+  .Header-text p {
+    font-size: 24px;
+  }
 }
 
 /*  ------------- Header  ---------------*/
@@ -442,7 +468,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: bottom 50px;
+    
   }
 
   .footer-section .footer-content {
@@ -476,6 +502,7 @@
   display: flex;
   flex-direction: row;
   align-items: center; /* Aligns items vertically in the middle */
+  gap: 10px;
 }
 .Footer-rights {
   position: relative;
