@@ -1,30 +1,14 @@
 // server.js
 const express = require('express');
 const path = require('path');
-const axios = require('axios');
+// const axios = require('axios');
 const app = express();
 const port = process.env.PORT || 8080;
-const YT_Channel_ID = "UCuNwM9dSfTwCdlNDJswjm2Q" // Jarle channel id
+// const YT_Channel_ID = "UCuNwM9dSfTwCdlNDJswjm2Q" // Jarle channel id
 
 
 
 // fetch youtube videos
-
-app.get('/fetch-youtube-videos', async (req, res) => {
-    try {
-        // fetch max 3 videos, order by date, type video as snippet
-        const response = await axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${YT_Channel_ID}&maxResults=3&order=date&type=video&key=${process.env.YOUTUBE_API_KEY}`);
-      const videos = response.data.items;
-      res.json(videos);
-    } catch (error) {
-      if (error.response && error.response.data) {
-        // If the error response has a data property, include it in the error object
-        error.message += ' - ' + JSON.stringify(error.response.data);
-      }
-      console.error(error);
-      res.status(500).json({ error: error.toString() });
-    }
-});
 
 // fetch Facebook posts
 

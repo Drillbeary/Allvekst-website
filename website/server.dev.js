@@ -17,7 +17,7 @@ app.get('/fetch-youtube-videos', async (req, res) => {
       const videos = response.data.items;
       res.json(videos);
     } catch (error) {
-      console.error(error);
+      console.error(error && error.response.data);
       res.status(500).json({ error: error.toString() });
     }
 });
