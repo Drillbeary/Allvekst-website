@@ -1,4 +1,9 @@
+# To manually push the dockerfile to azure
+# az webapp config container set --name Allvekst --resource-group Allvekst_group --docker-custom-image-name drillbeary/allvekst:latest --docker-registry-server-url https://registry.hub.docker.com
+
 #To run docker locally do
+# docker pull drillbeary/allvekst:latest
+
 # docker build -t my-app -f ./website/Dockerfile .
 # docker run -p 8080:8080 -d my-app
 
