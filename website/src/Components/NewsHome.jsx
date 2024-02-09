@@ -31,7 +31,7 @@ function NewsHome() {
 
   const newsCategories = { // The news categories
     'Facebook': [
-      { title: 'Nyheter 1', summary: 'Summary of Nyheter 1', image: 'url-to-image-1' },
+      { title: 'Nyheter 1', summary: 'Summary of test 1', image: 'url-to-image-1' },
       { title: 'Nyheter 2', summary: 'Summary of Nyheter 2', image: 'url-to-image-2' },
       { title: 'Nyheter 3', summary: 'Summary of Nyheter 3', image: 'url-to-image-3' }
     ],
