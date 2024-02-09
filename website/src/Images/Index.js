@@ -12,3 +12,4 @@ export { default as ContactServiceavdeling } from './Contact/Serviceavdeling.web
 export { default as ContactSmåmekanisk } from './Contact/Småmekanisk.webp';
 export { default as ContactTiltak } from './Contact/Tiltak.webp';
 export { default as ContactVaskeriet } from './Contact/Vaskeriet.webp';
+

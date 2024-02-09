@@ -13,7 +13,10 @@ function GridHome() {
       image: Image.Serviceavdeling,
       Desc: txt.Serviceavdelingen.Desc,
       FlippedDesc: txt.Serviceavdelingen.FlippedDesc,
-      contact: Image.ContactServiceavdeling
+      contact_image: Image.ContactServiceavdeling,
+      contact_name: txt.Contact.Name,
+      contact_mobile: txt.Contact.Mobile,
+      contact_email: txt.Contact.Email
     },
     {
       id: 2,
@@ -21,7 +24,10 @@ function GridHome() {
       image: Image.Mormors,
       Desc: txt.Mormors.Desc,
       FlippedDesc: txt.Mormors.FlippedDesc,
-      contact: Image.ContactMormors
+      contact_image: Image.ContactMormors,
+      contact_name: txt.Contact.Name,
+      contact_mobile: txt.Contact.Mobile,
+      contact_email: txt.Contact.Email
     },
     {
       id: 3,
@@ -29,7 +35,10 @@ function GridHome() {
       image: Image.Vaskeriet,
       Desc: txt.Vaskeriet.Desc,
       FlippedDesc: txt.Vaskeriet.FlippedDesc,
-      contact: Image.ContactVaskeriet
+      contact_image: Image.ContactVaskeriet,
+      contact_name:  txt.Contact.Name,
+      contact_mobile: txt.Contact.Mobile,
+      contact_email: txt.Contact.Email
     },
     {
       id: 4,
@@ -37,7 +46,10 @@ function GridHome() {
       image: Image.Bygg,
       Desc: txt.Bygg.Desc,
       FlippedDesc: txt.Bygg.FlippedDesc,
-      contact: Image.ContactBygg
+      contact_image: Image.ContactBygg,
+      contact_name: txt.Contact.Name,
+      contact_mobile: txt.Contact.Mobile,
+      contact_email: txt.Contact.Email
     },
     {
       id: 5,
@@ -45,7 +57,10 @@ function GridHome() {
       image: Image.Småmekanisk,
       Desc: txt.Småmekanisk.Desc,
       FlippedDesc: txt.Småmekanisk.FlippedDesc,
-      contact: Image.ContactSmåmekanisk
+      contact_image: Image.ContactSmåmekanisk,
+      contact_name: txt.Contact.Name,
+      contact_mobile: txt.Contact.Mobile,
+      contact_email: txt.Contact.Email
     },
     {
       id: 6,
@@ -53,7 +68,10 @@ function GridHome() {
       image: Image.Tiltak,
       Desc: txt.Tiltak.Desc,
       FlippedDesc: txt.Tiltak.FlippedDesc,
-      contact: Image.ContactTiltak
+      contact_image: Image.ContactTiltak,
+      contact_name: txt.Contact.Name,
+      contact_mobile: txt.Contact.Mobile,
+      contact_email: txt.Contact.Email
     }
     
     // Add more categories...
@@ -102,7 +120,11 @@ function Card({ category }) {
         <div className="flip-card-back">
         <div><h1 className="flip-card-title">{category.name}</h1></div>
           <div>
-          <img src={category.contact} alt="Leder navn" />
+          <img src={category.contact_image} alt={category.contact_name} />
+          <p>name: {category.contact_name}</p>
+          <p>mobile: {category.contact_mobile}</p>
+          <p>email: {category.contact_email}</p>
+          
           <p>
           {category.FlippedDesc.split('\n').map((line, i) => {
             const boldLine = line.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');

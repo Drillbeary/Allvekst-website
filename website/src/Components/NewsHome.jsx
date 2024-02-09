@@ -68,8 +68,7 @@ function NewsHome() {
             // Map through the news and create a div for each news
             <div
               key={index}
-              className="news-content"
-              // Open news in new tab
+              className={`news-content ${index === 0 ? 'first-item' : ''}`}
               onClick={() =>{ const newWindow = window.open(news.link, '_blank'); newWindow.opener = null; }}
               style={{ cursor: 'pointer' }}
             >
