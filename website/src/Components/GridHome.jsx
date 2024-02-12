@@ -8,74 +8,75 @@ function GridHome() {
   const categories = [
     // Importing Txt and image, In the format Name, Image, Desc, FlippedDesc
     {
-      id: 1,
+      id: 0,
       name: txt.Serviceavdelingen.Title,
       image: Image.Serviceavdeling,
       Desc: txt.Serviceavdelingen.Desc,
       FlippedDesc: txt.Serviceavdelingen.FlippedDesc,
       contact_image: Image.ContactServiceavdeling,
-      contact_name: txt.Contact.Name,
-      contact_mobile: txt.Contact.Mobile,
-      contact_email: txt.Contact.Email
+      contact_name: txt.Contact[0].Name,
+      contact_mobile: txt.Contact[0].Mobile,
+      contact_email: txt.Contact[0].Email
     },
     {
-      id: 2,
+      id: 1,
       name: txt.Mormors.Title,
       image: Image.Mormors,
       Desc: txt.Mormors.Desc,
       FlippedDesc: txt.Mormors.FlippedDesc,
       contact_image: Image.ContactMormors,
-      contact_name: txt.Contact.Name,
-      contact_mobile: txt.Contact.Mobile,
-      contact_email: txt.Contact.Email
+      contact_name: txt.Contact[1].Name,
+      contact_mobile: txt.Contact[1].Mobile,
+      contact_email: txt.Contact[1].Email
     },
     {
-      id: 3,
+      id: 2,
       name: txt.Vaskeriet.Title,
       image: Image.Vaskeriet,
       Desc: txt.Vaskeriet.Desc,
       FlippedDesc: txt.Vaskeriet.FlippedDesc,
       contact_image: Image.ContactVaskeriet,
-      contact_name:  txt.Contact.Name,
-      contact_mobile: txt.Contact.Mobile,
-      contact_email: txt.Contact.Email
+      contact_name: txt.Contact[2].Name,
+      contact_mobile: txt.Contact[2].Mobile,
+      contact_email: txt.Contact[2].Email
     },
     {
-      id: 4,
+      id: 3,
       name: txt.Bygg.Title,
       image: Image.Bygg,
       Desc: txt.Bygg.Desc,
       FlippedDesc: txt.Bygg.FlippedDesc,
       contact_image: Image.ContactBygg,
-      contact_name: txt.Contact.Name,
-      contact_mobile: txt.Contact.Mobile,
-      contact_email: txt.Contact.Email
+      contact_name: txt.Contact[3].Name,
+      contact_mobile: txt.Contact[3].Mobile,
+      contact_email: txt.Contact[3].Email
     },
     {
-      id: 5,
+      id: 4,
       name: txt.Småmekanisk.Title,
       image: Image.Småmekanisk,
       Desc: txt.Småmekanisk.Desc,
       FlippedDesc: txt.Småmekanisk.FlippedDesc,
       contact_image: Image.ContactSmåmekanisk,
-      contact_name: txt.Contact.Name,
-      contact_mobile: txt.Contact.Mobile,
-      contact_email: txt.Contact.Email
+      contact_name: txt.Contact[4].Name,
+      contact_mobile: txt.Contact[4].Mobile,
+      contact_email: txt.Contact[4].Email
     },
     {
-      id: 6,
+      id: 5,
       name: txt.Tiltak.Title,
       image: Image.Tiltak,
       Desc: txt.Tiltak.Desc,
       FlippedDesc: txt.Tiltak.FlippedDesc,
       contact_image: Image.ContactTiltak,
-      contact_name: txt.Contact.Name,
-      contact_mobile: txt.Contact.Mobile,
-      contact_email: txt.Contact.Email
+      contact_name: txt.Contact[5].Name,
+      contact_mobile: txt.Contact[5].Mobile,
+      contact_email: txt.Contact[5].Email
     }
     
     // Add more categories...
   ];
+  console.log(txt.Contact[0].Name);
 
   return (
     <div className="flip-container">
@@ -113,6 +114,7 @@ function Card({ category }) {
             );
           })}
           </p>
+          <p className='flip-card-front-more'>Les mer</p>
           <img src={category.image} alt={category.name} />
           </div>
           
@@ -120,11 +122,13 @@ function Card({ category }) {
         <div className="flip-card-back">
         <div><h1 className="flip-card-title">{category.name}</h1></div>
           <div>
+            <div className="flip-card-contact-details">
           <img src={category.contact_image} alt={category.contact_name} />
-          <p>name: {category.contact_name}</p>
-          <p>mobile: {category.contact_mobile}</p>
-          <p>email: {category.contact_email}</p>
-          
+          <p>{category.contact_name}</p>
+          <p>{category.contact_mobile}</p>
+          <p>{category.contact_email}</p>
+          <p className='flip-card-back-more'>Tilbake</p>
+          </div>
           <p>
           {category.FlippedDesc.split('\n').map((line, i) => {
             const boldLine = line.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');

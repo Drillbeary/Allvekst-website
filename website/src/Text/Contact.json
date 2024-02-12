@@ -14,18 +14,18 @@
     "Email": "ingalill@allvekst.no"
 },
 {
-    "Desc": "Bygg",
-    "Name": "Bjarne Vassli",
-    "Position": "Avdelingsleder Bygg & Anleggsavdelingen",
-    "Mobile": "(+47) 913 12 950",
-    "Email": "bjarne@allvekst.no"
-},
-{
     "Desc": "Vaskeriet",
     "Name": "Trude Holm",
     "Position": "Avdelingsleder Vaskeriet",
     "Mobile": "(+47) 406 11 454",
     "Email": "trude@allvekst.no"
+},
+{
+    "Desc": "Bygg",
+    "Name": "Bjarne Vassli",
+    "Position": "Avdelingsleder Bygg & Anleggsavdelingen",
+    "Mobile": "(+47) 913 12 950",
+    "Email": "bjarne@allvekst.no"
 },
 {
     "Desc": "Småmekanisk",
