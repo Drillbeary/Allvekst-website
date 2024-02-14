@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Video from '../Images/Allvekst-AS-2022.mp4';
-import AllvekstLogo from "../Images/Logo/Allvekst-logo.png";
 import PlayButton from '../Images/Logo/play-button.svg';
 import '../Styles/Home.css'; // Import your CSS file
 import data from '../Text/Allvekst-Home.json';
@@ -29,7 +28,6 @@ function HeaderHome() {
       <div className='Header-wrap'>
       <div className="Header-container">
         <div className="Header-text">
-        <img src={AllvekstLogo} alt="Allvekst Logo" className='Header-Logo' />
           <h2>Folk- Først og Fremst</h2>
           <p>{text}</p>
         </div>

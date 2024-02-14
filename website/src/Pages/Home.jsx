@@ -10,13 +10,14 @@ import '../Styles/Home.css';
 function Home() {
   return (
     <div className="home-wrap">
+      <div className='Top-wrap'>
       <nav className='Nav-wrap'>
         <Nav />
       </nav>
       <header className='Header-wrap'>
           <HeaderHome />
       </header>
-
+      </div>
       <section className="news-wrap">
         <NewsHome />
       </section>

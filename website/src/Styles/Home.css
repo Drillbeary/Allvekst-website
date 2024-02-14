@@ -10,6 +10,7 @@
   --card-color: #ffffff;
   --title-color: #520050;
   --text-color: #333333;
+  --text-white: #ffffff;
   --link-color: #0077cc;
   --card-title-color: #8AB4F8;
   --card-text-color: #000000;
@@ -18,8 +19,6 @@
   --fir-font-header: "foco", Helvetica;
   --fir-color-grey: rgba(0,0,0, 0.40);
 
-  background-color: var(--background-color);
-  color: var(--text-color);
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px; /*multiply by 1.618*/
   line-height: 1.5;
@@ -39,6 +38,16 @@ body {
   
 }
 
+.Top-wrap{
+  height: 100vh;
+  background-image: url('../Images/Header-background.webp');
+  background-size: cover;
+  background-position: center;
+  image-rendering: smooth; /* or 'auto' */
+
+
+}
+
 /*  ------------- NAV  ---------------*/
 
 .Nav-menu-icon {
@@ -56,22 +65,24 @@ body {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  padding: 20px 15% 20px 0;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
 }
 .Nav-links {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
-}
-.Nav-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  font-size: 2.168em;
+  font-size: 1.168em;
   font-weight: 700;
-  color: var(--link);
+
+}
+.Nav-links a {
+  color: var(--text-white);
+  border: 1px solid white; /* Change the color as needed */
+  padding: 10px; /* Add some padding so the text isn't too close to the border */
+  text-decoration: none; /* Optional: remove the underline from the links */
+  border-radius: 50px;
 }
 @media (max-width: 1000px) {
   .Nav-container .Nav-menu-icon {
@@ -109,12 +120,11 @@ body {
   flex-direction: row;
   width: 100%;
   height: 100%;
-  margin-bottom: 5%;
-  
+  margin-top: 5%;
 }
 
 .Header-container > :first-child {
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,47 +134,39 @@ body {
 .Header-container > :last-child {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 50%;
 }
 
 
-.Header-Logo {
-  position: relative;
+
+.Header-text{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
-  height: auto;
-  z-index: -1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
 }
 
-
 .Header-text h1 {
-  position: absolute;
   top: 50%;
   font-size: 2.618em;
-  color: var(--titel-color);
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  z-index: 1;
+  color: var(--Titel-color);
 }
 
 .Header-text h2 {
-  font-size: 1.618em;
-  color: var(--text-color);
-  text-align: center;
+  font-size: 2.618em;
+  color: var(--card-title-color);
   margin: 0;
-  padding: 0;
 }
 
 .Header-text p {
-  font-size: 1em;
-  font-style: italic;
-  color: var(--text-color);
+  font-size: 1.618em;
+  color: var(--text-white);
   text-align: center;
-  margin: 0;
-  padding: 0;
+  padding: 10px 20px;
 }
 .Header-video {
   display: flex;
@@ -172,12 +174,14 @@ body {
   align-items: center;
   position: relative;
   overflow: hidden;
+  
 }
 
 .Header-video video {
   width:70%;
   height: 100%;
   position: relative;
+  border-radius: 20px;
 
   
 }
