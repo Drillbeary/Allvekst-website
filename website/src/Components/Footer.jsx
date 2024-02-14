@@ -35,7 +35,7 @@ function Footer() {
               </tr>
               <tr>
                 <td>lør - Søn:</td>
-                <td>stengt</td>
+                <td>Stengt</td>
               </tr>
             </tbody>
           </table>
@@ -54,7 +54,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <p className='Footer-rights'>© 2024 Allvekst AS. All rights reserved. | <a href='https://github.com/Drillbeary/Allvekst-website'>Website</a> by <a href="https://www.linkedin.com/in/sander-halseth-4267a2287/">Sander Halseth</a></p>
+      <p className='Footer-rights'>© 2024 Allvekst AS. All rights reserved. | <a href='https://github.com/Drillbeary/Allvekst-website'>Website</a> by <a href="https://www.linkedin.com/in/sander-halseth-4267a2287/">Sander H.</a></p>
     </footer>
   );
 }

@@ -101,6 +101,7 @@ function Card({ category }) {
     <div className={`flip-card ${isFlipped ? 'flip-card-flipped' : ''}`}>
       <div className="flip-card-inner">
         <div className="flip-card-front">
+          <img className="flip-card-title-img"src={category.image} alt={category.name} />
           <div><h1 className="flip-card-title">{category.name}</h1></div>
           <div>
           <p>
@@ -114,20 +115,19 @@ function Card({ category }) {
             );
           })}
           </p>
-          <p className='flip-card-front-more'>Les mer</p>
-          <img src={category.image} alt={category.name} />
           </div>
           
         </div>
         <div className="flip-card-back">
-        <div><h1 className="flip-card-title">{category.name}</h1></div>
+        <div className="flip-card-title"><h1>{category.name}</h1></div>
           <div>
             <div className="flip-card-contact-details">
           <img src={category.contact_image} alt={category.contact_name} />
-          <p>{category.contact_name}</p>
+          <div className="flip-card-contact-details-text">
+          <h2>{category.contact_name}</h2>
           <p>{category.contact_mobile}</p>
           <p>{category.contact_email}</p>
-          <p className='flip-card-back-more'>Tilbake</p>
+          </div>
           </div>
           <p>
           {category.FlippedDesc.split('\n').map((line, i) => {
@@ -143,7 +143,10 @@ function Card({ category }) {
           </div>
         </div>
       </div>
-      <div onClick={handleClick} className="flip-card-clickable-area" style={{ right: isFlipped ? 'auto' : '0', left: isFlipped ? '0' : 'auto' }}></div>
+        <div onClick={handleClick} className="flip-card-clickable-area" style={{ right: '0', left: 'auto' }}>
+          <img src={Image.Arrow_button} alt="arrow button" className={`flip-card-arrow ${isFlipped ? 'flip-card-arrow-flipped' : ''}`}/>
+        </div>
+      
     </div>
   );
 }
