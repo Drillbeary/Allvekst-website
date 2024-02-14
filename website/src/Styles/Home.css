@@ -123,7 +123,7 @@ body {
   margin-top: 5%;
 }
 
-.Header-container > :first-child {
+.Header-container > :first-child { /* title text */
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -131,9 +131,8 @@ body {
   align-items: center;
 }
 
-.Header-container > :last-child {
+.Header-container > :last-child { /* allvekst video */
   display: flex;
-  flex-direction: column;
   width: 50%;
 }
 
@@ -150,12 +149,6 @@ body {
 
 }
 
-.Header-text h1 {
-  top: 50%;
-  font-size: 2.618em;
-  color: var(--Titel-color);
-}
-
 .Header-text h2 {
   font-size: 2.618em;
   color: var(--card-title-color);
@@ -166,7 +159,8 @@ body {
   font-size: 1.618em;
   color: var(--text-white);
   text-align: center;
-  padding: 10px 20px;
+  padding: 0px 20px 10px 20px;
+  margin: 0px;
 }
 .Header-video {
   display: flex;
@@ -174,11 +168,10 @@ body {
   align-items: center;
   position: relative;
   overflow: hidden;
-  
 }
 
 .Header-video video {
-  width:70%;
+  width:80%;
   height: 100%;
   position: relative;
   border-radius: 20px;
