@@ -39,7 +39,62 @@ body {
   
 }
 
+/*  ------------- NAV  ---------------*/
 
+.Nav-menu-icon {
+  position: absolute;
+  display: none;
+  margin: 1px;
+  top: 0;
+  right: 0;
+  z-index: 10;
+
+}
+
+
+.Nav-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 15% 20px 0;
+}
+.Nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.Nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  font-size: 2.168em;
+  font-weight: 700;
+  color: var(--link);
+}
+@media (max-width: 1000px) {
+  .Nav-container .Nav-menu-icon {
+    display: inline-flex;
+  }
+
+  .Nav-container .Nav-links {
+    display: none;
+    
+
+  }
+  .Nav-links img {
+    display: none;
+  }
+  
+  /* Show the links when the button is clicked */
+  .Nav-links.button-clicked {
+    display: flex;
+    font-size: 1em;
+  }
+
+}
+/*  ------------- NAV  ---------------*/
 
 
 /*  ------------- Header  ---------------*/
@@ -111,32 +166,6 @@ body {
   margin: 0;
   padding: 0;
 }
-.Header-menu-icon {
-  position: absolute;
-  display: none;
-  margin: 1px;
-  top: 0;
-  right: 0;
-  z-index: 10;
-
-}
-
-
-.Header-nav {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 20%;
-  min-height: 64px;
-}
-.Header-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-}
-
-
 .Header-video {
   display: flex;
   justify-content: center;
@@ -166,30 +195,9 @@ body {
   max-height: 10%;
 
 }
-.Header-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  font-size: 2.168em;
-  font-weight: 700;
-  color: var(--link);
-}
+
 
 @media (max-width: 1000px) {
-  .Header-nav .Header-menu-icon {
-    display: inline-flex;
-  }
-
-  .Header-nav .Header-links {
-    display: none;
-  }
-  
-  /* Show the links when the button is clicked */
-  .Header-links.button-clicked {
-    display: flex;
-  }
-
   .Header-container {
     flex-direction: column;
     gap: 20px;

@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import Video from '../Images/Allvekst-AS-2022.mp4';
 import AllvekstLogo from "../Images/Logo/Allvekst-logo.png";
-import MenuIcon from '../Images/Logo/menu-icon.svg';
 import PlayButton from '../Images/Logo/play-button.svg';
 import '../Styles/Home.css'; // Import your CSS file
 import data from '../Text/Allvekst-Home.json';
@@ -27,21 +25,8 @@ function HeaderHome() {
         setPlaying(!playing);
       }
     };
-  function handleClick() {
-    const links = document.querySelector('.Header-links');
-    links.classList.toggle('button-clicked');
-  }
     return (
       <div className='Header-wrap'>
-        <div className="Header-nav">
-      <button onClick={handleClick} className="Header-menu-icon">
-        <img src={MenuIcon} alt="Menu" />
-      </button>
-        <div className="Header-links">
-        <Link to="/Vision" >Vår Visjon</Link>
-        <Link to="/contact" >Kontakt Oss!</Link>
-        </div>
-      </div>
       <div className="Header-container">
         <div className="Header-text">
         <img src={AllvekstLogo} alt="Allvekst Logo" className='Header-Logo' />
