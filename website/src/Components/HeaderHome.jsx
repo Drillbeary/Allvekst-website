@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Video from '../Images/Allvekst-AS-2022.mp4';
-import PlayButton from '../Images/Logo/play-button.svg';
+import PosterImage from '../Images/KulbedriftStart.webp';
 import '../Styles/Home.css'; // Import your CSS file
 import data from '../Text/Allvekst-Home.json';
-
 
 function HeaderHome() {
   const [text, setText] = useState('');
@@ -32,8 +31,7 @@ function HeaderHome() {
           <p>{text}</p>
         </div>
         <div className='Header-video'>
-          <video  ref={videoRef} src={Video} onClick={handleVideoClick} />
-          {!playing && <img src={PlayButton} className="play-button" onClick={handleVideoClick} alt="Play video" />}
+          <video ref={videoRef} src={Video} onClick={handleVideoClick} poster={PosterImage} />
         </div>
       </div>
       </div>

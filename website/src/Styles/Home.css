@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
 
-
+/*https://coolors.co/c41818-000200-000408-250406-e4b0b0-a12c34-fdf9fa*/
 
 :root {
-  --primary-color: #252685;
-  --secondary-color: #581908;
-  --background-color: #ffffff;
+  --primary-color: #C41818;
+  --secondary-color: #A12C34;
+  --background-color: #FDF9FA;
   --card-background-color: #000000;
-  --card-color: #ffffff;
+  --card-color: #FDF9FA;
   --title-color: #520050;
   --text-color: #333333;
-  --text-white: #ffffff;
+  --text-white: #FDF9FA;
   --link-color: #0077cc;
-  --card-title-color: #8AB4F8;
+  --card-title-color: #C41818;
   --card-text-color: #000000;
 
   --fir-font-article: "adobe-garamond-pro", "Times New Roman", Times;
@@ -27,8 +27,6 @@
 body {
   position: relative;
   z-index: -10;
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
 }
 
 .home-wrap {
@@ -42,9 +40,9 @@ body {
   height: 100vh;
   background-image: url('../Images/Header-background.webp');
   background-size: cover;
-  background-position: center;
+  background-position: center calc(50% - 4px);
   image-rendering: smooth; /* or 'auto' */
-
+  border-radius: 0 0 30px ;
 
 }
 
@@ -112,7 +110,7 @@ body {
 
 .header-wrap {
   max-height: 100vh;
-
+  
 }
 .Header-container {
   display: flex;
@@ -121,6 +119,7 @@ body {
   width: 100%;
   height: 100%;
   margin-top: 5%;
+
 }
 
 .Header-container > :first-child { /* title text */
@@ -151,7 +150,9 @@ body {
 
 .Header-text h2 {
   font-size: 2.618em;
-  color: var(--card-title-color);
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 0;
 }
 
@@ -171,26 +172,41 @@ body {
 }
 
 .Header-video video {
+  box-sizing: border-box;
   width:80%;
   height: 100%;
   position: relative;
+  border: 2px solid white;
   border-radius: 20px;
 
   
 }
 
+.marquee {
+  --gap: 50px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
 
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll 2s linear infinite;
+}
 
-
-.play-button {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: none;
-  max-width: 10%;
-  max-height: 10%;
-
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
 }
 
 
