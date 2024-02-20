@@ -3,8 +3,9 @@
 /*https://coolors.co/c41818-000200-000408-250406-e4b0b0-a12c34-fdf9fa*/
 
 :root {
-  --primary-color: #C41818;
-  --secondary-color: #A12C34;
+  --primary-color: #ff7669;
+  --secondary-color: #fee380;
+
   --background-color: #FDF9FA;
   --card-background-color: #000000;
   --card-color: #FDF9FA;
@@ -38,7 +39,7 @@ body {
 
 .Top-wrap{
   height: 100vh;
-  background-image: url('../Images/Header-background.webp');
+  background-image: url('../Images/Header-background.jpg');
   background-size: cover;
   background-position: center calc(50% - 4px);
   image-rendering: smooth; /* or 'auto' */
@@ -65,22 +66,25 @@ body {
   justify-content: flex-end;
   border-bottom: 1px solid white;
   margin-bottom: 10px;
+  padding: 2px 20px 2px 2px;
+  
 }
 .Nav-links {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   font-size: 1.168em;
   font-weight: 700;
+  transform: translateX(-50px);
+  
 
 }
 .Nav-links a {
   color: var(--text-white);
-  border: 1px solid white; /* Change the color as needed */
   padding: 10px; /* Add some padding so the text isn't too close to the border */
   text-decoration: none; /* Optional: remove the underline from the links */
-  border-radius: 50px;
+
 }
 @media (max-width: 1000px) {
   .Nav-container .Nav-menu-icon {
@@ -150,9 +154,7 @@ body {
 
 .Header-text h2 {
   font-size: 2.618em;
-  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--primary-color);
   margin: 0;
 }
 
@@ -180,33 +182,6 @@ body {
   border-radius: 20px;
 
   
-}
-
-.marquee {
-  --gap: 50px;
-  position: relative;
-  display: flex;
-  overflow: hidden;
-  user-select: none;
-  gap: var(--gap);
-}
-
-.marquee__content {
-  flex-shrink: 0;
-  display: flex;
-  justify-content: space-around;
-  gap: var(--gap);
-  min-width: 100%;
-  animation: scroll 2s linear infinite;
-}
-
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-100% - var(--gap)));
-  }
 }
 
 
@@ -252,8 +227,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: var(--primary-color);
-  border-radius: 30px;
+  background: var(--primary-color);
+  border-radius: 30px 0 30px 30px;
 }
 
 .flip-container {
@@ -275,7 +250,9 @@ body {
 
 .flip-card h1 {
   font-size: 1.618em;
-  color: var(--card-title-color);
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   margin: 0;
 }
@@ -478,10 +455,12 @@ body {
 
 .news-wrap {
   margin: 3vh 0;
-  padding: 3vh 0;
+  padding: 3vh 3vh;
   display: flex;
-  justify-content: center;
+  box-sizing: border-box;
+  justify-content: left;
   align-items: center;
+  width: 100%;
 
 }
 
@@ -489,7 +468,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translateX(-5%);
 }
 
 
@@ -508,6 +486,7 @@ body {
 }
 .news-category-text {
   display: inline-flex;
+
 }
 .news-category-icon {
   display: none;
@@ -532,24 +511,39 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid #000; /* Add a 1px solid black border */
-  width: 23vw;
-  height: auto;
-  padding: 10px;
-  
+  border-radius: 10px;
+  width: 28vw;
+  height: 150px;
+}
+
+.news-content > :first-child { /* Title text*/
+  width: 70%; /* This will make the first child (news-text) take up 70% of the width */
+  font-size: 1em;
 }
 
 .news-text {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: left;
+
+}
+.news-text h2 {
+  color: #666;
+  text-decoration: none;
 }
 
-.news-image {
-  max-width: 35%;
-  height: auto;
-  margin-left:auto
-  
+.news-content > :last-child { /*Image preview*/
+  width: 30%; /* This will make the last child (news-image) take up 30% of the width */
+  max-width: 100%; /* This will allow the image to take up to 100% of its container's width */
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
+
 
 @media (max-width: 1000px) { /* Adjust this value based on when you want the desktop styles to take effect */
   

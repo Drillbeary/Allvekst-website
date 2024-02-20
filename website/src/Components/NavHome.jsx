@@ -17,6 +17,7 @@ return (
     </button>
         <div className="Nav-links">
         <Link to="/Vision">Vår Visjon</Link>
+        <Link to="/Tiltak">Tiltak</Link>
         <Link to="/contact">Kontakt Oss!</Link>
         
         </div>

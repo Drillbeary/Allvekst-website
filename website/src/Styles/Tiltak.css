@@ -1,0 +1,96 @@
+
+:root {
+    --primary-color: #ff7669;
+    --secondary-color: #fee380;
+
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px; /*multiply by 1.618*/
+    line-height: 1;
+
+}
+
+.Tiltak-page-wrapper{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Images/vision-background.jpg');
+    background-size: cover;
+    background-position: center 20%;
+    padding:0px;
+    margin:0px;
+    z-index:-1
+}
+
+
+
+.Tiltak-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin-left: 5%;
+    gap: 50px;
+}
+
+.Tiltak-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    width: 50vw; /* Adjusted to take up 60% of the page */
+    color: white;
+    text-align: left;
+    gap: 2px;
+    margin-top: 20px;
+
+}
+
+.Tiltak-container h1 {
+font-size: 3em;
+font-weight: bold;
+color: white; /* Big and white */
+position: relative; /* To position the subtitle relative to this */
+margin: 0 0 10px 0;
+padding: 0px;
+}
+
+.Tiltak-container .Subtitle span {
+    color: black; /* White text */
+    background-color: orange; /* Orange background */
+    padding: 0px 5px; /* Add some padding to give the background some space around the text */
+}
+
+.Tiltak-container h2 {
+font-size: 1.7em; /* Same size as p tags */
+color: white; /* White text */
+text-align: left;
+margin: 0px;
+padding: 0px;
+}
+
+.Tiltak-container p {
+font-size: 1.7em;
+color: orange; /* Orange text */
+margin: 0px;
+padding: 0px;
+
+}
+
+@media (max-width: 1000px) {
+    .Tiltak-container-wrapper {
+        margin-left: 2%;
+        gap: 20px;
+    }
+
+    .Tiltak-container {
+        width: 90vw; /* Take up 90% of the viewport width */
+        margin-top: 10px;
+        gap: 1px;
+    }
+
+    .Tiltak-container h1 {
+        font-size: 2em; /* Adjust font size */
+    }
+
+    .Tiltak-container h2, .Tiltak-container p {
+        font-size: 1.2em; /* Adjust font size */
+    }
+}
