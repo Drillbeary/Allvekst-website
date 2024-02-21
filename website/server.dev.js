@@ -1,15 +1,19 @@
 // server.js
 require('dotenv').config();
 const express = require('express');
-const path = require('path');
-const axios = require('axios');
+//const path = require('path');
+//const axios = require('axios');
 const app = express();
 const port = process.env.PORT || 8080;
-const YT_Channel_ID = "UCuNwM9dSfTwCdlNDJswjm2Q" // Jarle channel id
+// const YT_Channel_ID = "UCuNwM9dSfTwCdlNDJswjm2Q" // Jarle channel id
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+  });
 
 
 // fetch youtube videos
-
+/*
 app.get('/fetch-youtube-videos', async (req, res) => {
     try {
         // fetch max 3 videos, order by date, type video as snippet
@@ -21,14 +25,12 @@ app.get('/fetch-youtube-videos', async (req, res) => {
       res.status(500).json({ error: error.toString() });
     }
 });
+*/
 
 // fetch Facebook posts
 
 // facebook so complicated :(
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-    });
 
 
 // Serve static files from the React app
