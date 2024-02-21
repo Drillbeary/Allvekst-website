@@ -1,3 +1,4 @@
+import Allshine from './Allshine.json';
 import Bygg from './Bygg.json';
 import Contact from './Contact.json';
 import Mormors from './Mormors.json';
@@ -7,7 +8,8 @@ import Tiltak from './Tiltak.json';
 import Vaskeriet from './Vaskeriet.json';
 
 export {
-  Bygg, Contact, Mormors,
+  Allshine, Bygg, Contact, Mormors,
   Serviceavdelingen,
   Småmekanisk, Tiltak, Vaskeriet
 };
+

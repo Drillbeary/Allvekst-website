@@ -14,3 +14,4 @@ export { default as ContactTiltak } from './Contact/Tiltak.webp';
 export { default as ContactVaskeriet } from './Contact/Vaskeriet.webp';
 
 export { default as Arrow_button } from './Arrow-button.png';
+

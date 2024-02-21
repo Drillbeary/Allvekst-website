@@ -64,10 +64,10 @@ function GridHome() {
     },
     {
       id: 5,
-      name: txt.Tiltak.Title,
+      name: txt.Allshine.Title,
       image: Image.Tiltak,
-      Desc: txt.Tiltak.Desc,
-      FlippedDesc: txt.Tiltak.FlippedDesc,
+      Desc: txt.Allshine.Desc,
+      FlippedDesc: txt.Allshine.FlippedDesc,
       contact_image: Image.ContactTiltak,
       contact_name: txt.Contact[5].Name,
       contact_mobile: txt.Contact[5].Mobile,
@@ -80,6 +80,7 @@ function GridHome() {
 
   return (
     <div className="flip-container">
+
       {categories.map((category) => (
         <Card
           key={category.id}
