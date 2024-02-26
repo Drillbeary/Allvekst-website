@@ -1,10 +1,10 @@
 // Images/index.js
-export { default as Serviceavdeling } from './Serviceavdelingen.webp';
+export { default as Serviceavdeling } from './Serviceavdelingen.png';
 export { default as Småmekanisk } from './Småmekanisk.webp';
-export { default as Vaskeriet } from './Vaskeriet.webp';
-export { default as Bygg } from './bygg-og-annleg.webp';
-export { default as Mormors } from './mormors.webp';
-export { default as Tiltak } from './tiltak.webp';
+export { default as Vaskeriet } from './Vaskeriet.png';
+export { default as Tiltak } from './allshine.png';
+export { default as Bygg } from './bygg-og-annleg.png';
+export { default as Mormors } from './mormors.png';
 
 export { default as ContactBygg } from './Contact/Bygg.webp';
 export { default as ContactMormors } from './Contact/Mormors.webp';
