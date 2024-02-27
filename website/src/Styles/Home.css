@@ -3,26 +3,37 @@
 /*https://coolors.co/c41818-000200-000408-250406-e4b0b0-a12c34-fdf9fa*/
 
 :root {
-  --primary-color: #ff7669;
+  --primary-color: #c6191b;
   --secondary-color: #fee380;
 
   --background-color: #FDF9FA;
   --card-background-color: #000000;
-  --card-color: #FDF9FA;
+  --card-color: #ffe5dc;
   --title-color: #520050;
   --text-color: #333333;
   --text-white: #FDF9FA;
   --link-color: #0077cc;
-  --card-title-color: #C41818;
+  --card-title-color: #e0685a;
   --card-text-color: #000000;
 
   --fir-font-article: "adobe-garamond-pro", "Times New Roman", Times;
   --fir-font-header: "foco", Helvetica;
   --fir-color-grey: rgba(0,0,0, 0.40);
-
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px; /*multiply by 1.618*/
   line-height: 1.5;
+}
+
+@font-face {
+  /*Downloaded from https://www.fontspace.com/supply-center-font-f89906*/
+  font-family: 'SupplyCenter';
+  src: url('../Images/Fonts/SupplyCenter.ttf') format('truetype');
+}
+
+  /*Downloaded from https://www.fontspace.com/rony-siswadi-16-font-f87991*/
+@font-face {
+  font-family: 'Ronysiswadi16';
+  src: url('../Images/Fonts/Ronysiswadi16.ttf') format('truetype');
 }
 
 body {
@@ -160,12 +171,14 @@ section {
 
 .Header-text h2 {
   font-size: 2.618em;
+  font-family: 'SupplyCenter', sans-serif;
   color: var(--primary-color);
   margin: 0;
 }
 
 .Header-text p {
   font-size: 1.618em;
+  font-family: 'Ronysiswadi16', sans-serif;
   color: var(--text-white);
   text-align: center;
   padding: 0px 20px 10px 20px;
@@ -223,14 +236,41 @@ section {
 
 .Segway-container{
   height: 400px;
+  display:flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .Segway-container img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  z-index: -1;
 
 }
+.Segway-container h1{
+  color: white;
+  font-size: 2.618em;
+  font-family: 'SupplyCenter' , sans-serif;
+  position: center;
+  z-index: 1;
+  margin: 0;
+}
+.Segway-container h2{
+  color: white;
+  font-size: 2.618em;
+  font-family: 'Ronysiswadi16' , sans-serif;
+  position: center;
+  z-index: 1;
+}
+.Segway-container span{
+  color:#c6191b;
 
+}
 
 
 
@@ -265,15 +305,15 @@ section {
 
 .flip-card h1 {
   font-size: 1.618em;
-  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: 'SupplyCenter', sans-serif;
+  color: var(--card-title-color);
   text-align: center;
   margin: 0;
 }
 
 .flip-card p {
   font-size: 1em;
+  font-family: 'Ronysiswadi16', sans-serif;
   color: var(--card-text-color);
   text-align: left;
   padding: 20px;
@@ -415,7 +455,6 @@ section {
 
 .flip-card-title-img{
   width: 100%;
-  height: 70%;
   object-fit: cover;
   
 }

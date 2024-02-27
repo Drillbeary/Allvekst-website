@@ -8,10 +8,10 @@
 },
 {
     "Desc": "Mormors",
-    "Name": "Ingalill Råket",
-    "Position": "Daglig leder",
-    "Mobile": "(+47) 905 26 608",
-    "Email": "ingalill@allvekst.no"
+    "Name": "Ole Opsal Austad",
+    "Position": "Mormors",
+    "Mobile": "(+47) 908 08 911",
+    "Email": "Oleopsal@allvekst.no"
 },
 {
     "Desc": "Vaskeriet",
@@ -33,6 +33,13 @@
     "Position": "Avdelingsleder Småmekanisk verksted",
     "Mobile": "(+47) 905 91 435",
     "Email": "kenneth@allvekst.no"
+},
+{
+    "Desc": "Allshine",
+    "Name": "Arvid Sæther",
+    "Position": "Allshine Avdelingsleder",
+    "Mobile": "(+47) 484 41 957",
+    "Email": "bente@allvekst.no"
 },
 {
     "Desc": "Tiltak",
