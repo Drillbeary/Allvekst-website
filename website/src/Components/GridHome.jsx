@@ -65,10 +65,10 @@ function GridHome() {
     {
       id: 5,
       name: txt.Allshine.Title,
-      image: Image.Tiltak,
+      image: Image.Allshine,
       Desc: txt.Allshine.Desc,
       FlippedDesc: txt.Allshine.FlippedDesc,
-      contact_image: Image.ContactTiltak,
+      contact_image: Image.ContactAllshine,
       contact_name: txt.Contact[5].Name,
       contact_mobile: txt.Contact[5].Mobile,
       contact_email: txt.Contact[5].Email
