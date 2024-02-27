@@ -1,6 +1,3 @@
-:root {
-  --primary-color: #ff7669;
-}
 
 .background-image {
   width: 100%;
@@ -24,9 +21,10 @@
 }
 
 .contact-page a {
-  color: var(--primary-color);
+  color: black;
 }
 
 .contact-page .Nav-container {
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 2px solid black;
+  margin: 0;
 }

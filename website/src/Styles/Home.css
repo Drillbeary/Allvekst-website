@@ -6,7 +6,7 @@
   --primary-color: #c6191b;
   --secondary-color: #fee380;
 
-  --background-color: #FDF9FA;
+  --background-color: #ff7669;
   --card-background-color: #000000;
   --card-color: #ffe5dc;
   --title-color: #520050;
@@ -81,9 +81,8 @@ section {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  border-bottom: 1px solid white;
-  margin-bottom: 10px;
-  padding: 2px 20px 2px 2px;
+  margin: 0px 8vw 0px 0px;
+  padding: 10px 20px 2px 2px;
   
 }
 .Nav-links {
@@ -98,11 +97,14 @@ section {
 
 }
 .Nav-links a {
+  font-size: 1.618em;
+  font-family: 'Ronysiswadi16', sans-serif;
   color: var(--text-white);
   padding: 10px; /* Add some padding so the text isn't too close to the border */
   text-decoration: none; /* Optional: remove the underline from the links */
 
 }
+
 @media (max-width: 1000px) {
   .Nav-container .Nav-menu-icon {
     display: inline-flex;
@@ -159,11 +161,6 @@ section {
 
 
 .Header-text{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   height: 100%;
   z-index: 1;
 
@@ -174,6 +171,8 @@ section {
   font-family: 'SupplyCenter', sans-serif;
   color: var(--primary-color);
   margin: 0;
+  margin-left: 5%;
+  margin-top: 5%;
 }
 
 .Header-text p {
@@ -183,6 +182,7 @@ section {
   text-align: center;
   padding: 0px 20px 10px 20px;
   margin: 0px;
+  margin-left: 5%;
 }
 .Header-video {
   display: flex;
@@ -254,7 +254,7 @@ section {
 }
 .Segway-container h1{
   color: white;
-  font-size: 2.618em;
+  font-size: 3.618em;
   font-family: 'SupplyCenter' , sans-serif;
   position: center;
   z-index: 1;
@@ -263,12 +263,14 @@ section {
 .Segway-container h2{
   color: white;
   font-size: 2.618em;
+
   font-family: 'Ronysiswadi16' , sans-serif;
   position: center;
   z-index: 1;
 }
 .Segway-container span{
   color:#c6191b;
+  font-weight: bold;
 
 }
 
@@ -282,7 +284,7 @@ section {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: var(--primary-color);
+  background: var(--background-color);
 }
 
 .flip-container {
@@ -456,6 +458,7 @@ section {
 .flip-card-title-img{
   width: 100%;
   object-fit: cover;
+  object-position: center 20%;
   
 }
 
@@ -498,130 +501,6 @@ section {
 
 
 
-
-
-
-
-
-
-/*  ------------- NEWS ---------------*/
-
-
-.news-wrap {
-  margin: 3vh 0;
-  padding: 3vh 3vh;
-  display: flex;
-  box-sizing: border-box;
-  justify-content: left;
-  align-items: center;
-  width: 100%;
-
-}
-
-.news-home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.news-nav {
-  display: flex;
-  width: 100%;
-  padding-bottom: 10px;
-  text-align: center;
-}
-.news-nav button {
-  margin-right: 5px;
-  padding: 10px 20px; /* Make buttons bigger */
-  font-size: 2em; /* Increase font size */
-  border: 0px solid #000;
-  background: none; /* Remove default button background */
-}
-.news-category-text {
-  display: inline-flex;
-
-}
-.news-category-icon {
-  display: none;
-}
-.news-nav button.nav-active {
-  border-bottom: 2px solid #00000050;; /* Add a border under the active button */
-}
-
-.news-container {
-  display: flex;
-  flex-direction: row; /* Changes the direction of the flex items */
-  flex-wrap: nowrap; /* Allows the items to wrap onto the next line if there isn't enough space */
-  justify-content: left; /* Aligns content horizontally */
-  gap: 10px;
-  width: 100%; /* Takes up the whole row horizontally */
-  height: 100%; /* Takes up the whole row vertically */
-}
-
-.news-content {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #000; /* Add a 1px solid black border */
-  border-radius: 10px;
-  width: 28vw;
-  height: 150px;
-}
-
-.news-content > :first-child { /* Title text*/
-  width: 70%; /* This will make the first child (news-text) take up 70% of the width */
-  font-size: 1em;
-}
-
-.news-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  text-align: left;
-
-}
-.news-text h2 {
-  color: #666;
-  text-decoration: none;
-}
-
-.news-content > :last-child { /*Image preview*/
-  width: 30%; /* This will make the last child (news-image) take up 30% of the width */
-  max-width: 100%; /* This will allow the image to take up to 100% of its container's width */
-  height: 100%;
-  object-fit: cover;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-
-@media (max-width: 1000px) { /* Adjust this value based on when you want the desktop styles to take effect */
-  
-  /* Hide the text and show the icon when the screen is less than 1000px wide */
-  .news-category-text {
-    display: none;
-  }
-
-  .news-category-icon {
-    display: inline-flex;
-  }
-
-  .news-content {
-    display: none;
-    width: 100%;
-    margin: 10px;
-    box-sizing:border-box;
-  }
-
-  .news-content.first-item {
-    display: flex;
-  }
-}
-/*  ------------- NEWS ---------------*/
 
 
 

@@ -22,7 +22,7 @@ return (
         
         </div>
         <Link to="/">
-            <img src={AllvekstIcon} alt="Allvekst Icon" />
+            <img className="Nav-home-icon" src={AllvekstIcon} alt="Allvekst Icon" />
         </Link>
     </div>
     );

@@ -1,13 +1,4 @@
 
-:root {
-    --primary-color: #ff7669;
-    --secondary-color: #fee380;
-
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 16px; /*multiply by 1.618*/
-    line-height: 1;
-
-}
 
 .Tiltak-page-wrapper{
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Images/tiltak-background.jpg');
@@ -73,6 +64,7 @@ margin: 0px;
 padding: 0px;
 
 }
+
 
 @media (max-width: 1000px) {
     .Tiltak-container-wrapper {

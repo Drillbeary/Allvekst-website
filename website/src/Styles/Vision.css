@@ -1,7 +1,5 @@
 
 :root {
-    --primary-color: #ff7669;
-    --secondary-color: #fee380;
 
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px; /*multiply by 1.618*/
@@ -72,6 +70,7 @@ margin: 0px;
 padding: 0px;
 
 }
+
 
 @media (max-width: 1000px) {
     .vision-container-wrapper {
