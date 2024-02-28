@@ -13,6 +13,7 @@ function GridHome() {
       image: Image.Serviceavdeling,
       Desc: txt.Serviceavdelingen.Desc,
       FlippedDesc: txt.Serviceavdelingen.FlippedDesc,
+      SaleImg: Image.SaleServiceavdeling,
       contact_image: Image.ContactServiceavdeling,
       contact_name: txt.Contact[0].Name,
       contact_mobile: txt.Contact[0].Mobile,
@@ -24,6 +25,7 @@ function GridHome() {
       image: Image.Mormors,
       Desc: txt.Mormors.Desc,
       FlippedDesc: txt.Mormors.FlippedDesc,
+      SaleImg: Image.SaleMormors,
       contact_image: Image.ContactMormors,
       contact_name: txt.Contact[1].Name,
       contact_mobile: txt.Contact[1].Mobile,
@@ -35,6 +37,7 @@ function GridHome() {
       image: Image.Vaskeriet,
       Desc: txt.Vaskeriet.Desc,
       FlippedDesc: txt.Vaskeriet.FlippedDesc,
+      SaleImg: Image.SaleVaskeriet,
       contact_image: Image.ContactVaskeriet,
       contact_name: txt.Contact[2].Name,
       contact_mobile: txt.Contact[2].Mobile,
@@ -46,6 +49,7 @@ function GridHome() {
       image: Image.Bygg,
       Desc: txt.Bygg.Desc,
       FlippedDesc: txt.Bygg.FlippedDesc,
+      SaleImg: Image.SaleBygg,
       contact_image: Image.ContactBygg,
       contact_name: txt.Contact[3].Name,
       contact_mobile: txt.Contact[3].Mobile,
@@ -57,6 +61,7 @@ function GridHome() {
       image: Image.Småmekanisk,
       Desc: txt.Småmekanisk.Desc,
       FlippedDesc: txt.Småmekanisk.FlippedDesc,
+      SaleImg: Image.SaleSmåmekanisk,
       contact_image: Image.ContactSmåmekanisk,
       contact_name: txt.Contact[4].Name,
       contact_mobile: txt.Contact[4].Mobile,
@@ -68,6 +73,7 @@ function GridHome() {
       image: Image.Allshine,
       Desc: txt.Allshine.Desc,
       FlippedDesc: txt.Allshine.FlippedDesc,
+      SaleImg: Image.SaleAllshine,
       contact_image: Image.ContactAllshine,
       contact_name: txt.Contact[5].Name,
       contact_mobile: txt.Contact[5].Mobile,
@@ -120,15 +126,16 @@ function Card({ category }) {
           
         </div>
         <div className="flip-card-back">
-        <div className="flip-card-title"><h1>{category.name}</h1></div>
+
           <div>
             <div className="flip-card-contact-details">
-          <img src={category.contact_image} alt={category.contact_name} />
+          <img className='flip-card-contact-details-img' src={category.contact_image} alt={category.contact_name} />
           <div className="flip-card-contact-details-text">
           <h2>{category.contact_name}</h2>
           <p>{category.contact_mobile}</p>
           <p>{category.contact_email}</p>
           </div>
+          <img className='flip-card-sale' src={category.SaleImg} alt='Backside Sales'/>
           </div>
           <p>
           {category.FlippedDesc.split('\n').map((line, i) => {
