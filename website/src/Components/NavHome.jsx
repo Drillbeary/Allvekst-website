@@ -4,10 +4,6 @@ import AllvekstIcon from '../Images/Logo/Allvekst-icon.png';
 import '../Styles/Home.css'; // Import your CSS file
 
 const NavHome = () => {
-function handleClick() {
-    const links = document.querySelector('.Nav-links');
-    links.classList.toggle('button-clicked');
-    }
 return (
 <div className="Nav-container">
     

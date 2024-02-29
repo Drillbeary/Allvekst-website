@@ -106,7 +106,19 @@ section {
 }
 
 @media (max-width: 1000px) {
-  
+  .Nav-container{
+    margin: 0;
+    padding: 0;
+  }
+  .Nav-links {
+    gap: 5px;
+    transform: translateX(0px);
+  }
+  .Nav-links a {
+    font-size: 1em;
+    padding: 3px;
+  }
+
 }
 /*  ------------- NAV  ---------------*/
 
