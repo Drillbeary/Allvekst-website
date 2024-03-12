@@ -127,7 +127,7 @@ function Card({ category }) {
         </div>
         <div className="flip-card-back">
 
-          <div>
+          <div className=''>
             <div className="flip-card-contact-details">
           <img className='flip-card-contact-details-img' src={category.contact_image} alt={category.contact_name} />
           <div className="flip-card-contact-details-text">
@@ -135,8 +135,9 @@ function Card({ category }) {
           <p>{category.contact_mobile}</p>
           <p>{category.contact_email}</p>
           </div>
-          <img className='flip-card-sale' src={category.SaleImg} alt='Backside Sales'/>
+       
           </div>
+          <img className='flip-card-sale' src={category.SaleImg} alt='Backside Sales'/>
           <p>
           {category.FlippedDesc.split('\n').map((line, i) => {
             const boldLine = line.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');

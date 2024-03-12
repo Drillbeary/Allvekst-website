@@ -184,6 +184,7 @@ section {
   align-items: center;
   position: relative;
   overflow: hidden;
+  transform: translateY(-10px);
 }
 
 .Header-video video {
@@ -326,7 +327,7 @@ section {
 
 .flip-card p {
   font-size: 1em;
-  font-family: 'Ronysiswadi16', sans-serif;
+  font-family: sans-serif;
   color: var(--card-text-color);
   text-align: left;
   padding: 20px;
@@ -364,7 +365,7 @@ section {
   display: flex;
   align-items: top;
   margin-bottom: 40px;
-  margin-top: 40px;
+  margin-top: 20px;
   position: relative;
   text-decoration: none;
   line-height: 1.1;
@@ -400,14 +401,15 @@ section {
   margin-bottom: 10px;
 }
 
-.flip-card-sale{
+.flip-card-sale {
   object-fit: cover;
-  height: 400px;
+  height: 300px;
   width: auto;
   border-radius: 10px;
   padding: 0;
-  margin-left: 60px;
-
+  position: absolute;
+  top: 0;
+  right: 15px;
 }
 
 .flip-card-clickable-area {
@@ -442,24 +444,8 @@ section {
 }
 
 
-.flip-card-back > :first-child { /*Back card Title   */
-  height: 10%;
-}
 
-.flip-card-back > :last-child {  /*Back card content */
-  display: flex;
-  flex-direction: column;
-  height: 90%;
-}
 
-.flip-card-back > :last-child > :first-child { /* contact image / info */
-  height: 20%;
-  
-}
-
-.flip-card-back > :last-child > :last-child { /* content info*/
-  height: 80%;
-}
 
 .flip-card-inner {
   position: relative;
@@ -485,7 +471,10 @@ section {
   
 }
 
-
+.flip-card-back-container p span {
+  display: inline-block; /* Display spans as inline-block */
+  overflow: auto;
+}
 
 .flip-card-back {
   transform: rotateY(180deg);
